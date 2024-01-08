@@ -1,0 +1,249 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "no6d6r14.private-ncr.gov-ntruss.com/tenent-backup-scheduler:0.2",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.18.4"
+    },
+    "ImageID": "sha256:9d8c2dc377fd14fe20b66368fbc448d56ebdf4bf2afb29c371166c4d64a5b3ad",
+    "DiffIDs": [
+      "sha256:cc2447e1835a40530975ab80bb1f872fbab0f2a0faecf2ab16fbbb89b3589438",
+      "sha256:7b224650ba8852fb6651ec8dba67a5ad155a54b3502fcf07eefb04241ab104ed",
+      "sha256:b780604eec80378d2a295f35b713359c16ff99b6aa70b3bf88390dd8afed33fd",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "sha256:24ee2d5b8afcdca31f3af1e640455eba703f0251d34cb037306d76a0f6506a01",
+      "sha256:51b8d38f007df5f389dc28a0ee668b53d3cde04cd9dbdd0373a3239b4d69dbaf",
+      "sha256:f2dcce086ecd6d98c2852e6dc0a1e68fa155f4dec6990d88be871365b66a1baa",
+      "sha256:40b54521e9c915d9b64aca20b64f0f591d2f3ecd24e71c380fa2217c9f30ad38",
+      "sha256:fd2726af389fddd40c00e18ef5a12e777d7ef7284d6cb0aaec7b32b8576dc49f",
+      "sha256:e4121c7336640e914c64ba51c14b5ddf7782f804ce2ca207c5e817d40f437352",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+    ],
+    "RepoTags": [
+      "no6d6r14.private-ncr.gov-ntruss.com/tenent-backup-scheduler:0.2"
+    ],
+    "RepoDigests": [
+      "no6d6r14.private-ncr.gov-ntruss.com/tenent-backup-scheduler@sha256:d3ea7a38da94e9450f107e7e77d4ef9f8a84c2af958334babc0b6d3f20556a10"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2023-11-08T07:51:13.458971473Z",
+      "history": [
+        {
+          "created": "2023-09-28T21:19:27.686110063Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:756183bba9c7f4593c2b216e98e4208b9163c4c962ea0837ef88bd917609d001 in / "
+        },
+        {
+          "created": "2023-09-28T21:19:27.801479409Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T07:48:27.244112803Z",
+          "created_by": "ENV WORK_HOME=/app",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T07:48:27.244112803Z",
+          "created_by": "ENV APP_NAME=TenentBackupScheduler",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T07:48:27.244112803Z",
+          "created_by": "ENV PATH=/app/TenentBackupScheduler:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T07:48:27.244112803Z",
+          "created_by": "ENV LOG_HOME=/app/logs/shcema",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T07:48:27.244112803Z",
+          "created_by": "ENV USER=ez",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T07:48:27.244112803Z",
+          "created_by": "ENV GROUP=ez",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T07:48:27.244112803Z",
+          "created_by": "RUN /bin/sh -c mkdir -p             ${WORK_HOME}/${APP_NAME}             ${WORK_HOME}/util             ${LOG_HOME}             ; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T07:48:27.845208589Z",
+          "created_by": "RUN /bin/sh -c adduser ez --shell /bin/false --no-create-home;     usermod --shell /sbin/nologin ez;     chown -R ez:ez /app;     chown ${USER}:${GROUP} ${LOG_HOME}; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T07:48:27.929971097Z",
+          "created_by": "WORKDIR /app",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T07:48:27.929971097Z",
+          "created_by": "ENV TZ=Asia/Seoul",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T07:51:11.69125635Z",
+          "created_by": "RUN /bin/sh -c set -eux;     apk --no-cache update; \tapk --no-cache upgrade; \tapk --no-cache add openjdk17-jre=17.0.9_p8-r0; \tapk --no-cache add tzdata \u0026\u0026 \tcp /usr/share/zoneinfo/Asia/Seoul /etc/localtime \u0026\u0026 \techo \"Asia/Seoul\" \u003e /etc/timezone \tapk del tzdata ; \tapk cache clean; \trm -rf /var/cache/apk/*; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T07:51:11.76676301Z",
+          "created_by": "COPY ./TenentBackupScheduler/. /app/TenentBackupScheduler # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T07:51:11.795766861Z",
+          "created_by": "COPY ./util/. /app/util # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T07:51:12.241677173Z",
+          "created_by": "RUN /bin/sh -c chmod +x ${WORK_HOME}/${APP_NAME}/startup.sh; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T07:51:12.917860247Z",
+          "created_by": "RUN /bin/sh -c chmod 555 `find /${WORK_HOME}/${APP_NAME} -name \"*\" -and -not -name \"*log\"` ; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T07:51:12.917860247Z",
+          "created_by": "USER ez",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T07:51:13.430431172Z",
+          "created_by": "RUN /bin/sh -c chmod 755         ${WORK_HOME}/${APP_NAME}         ${WORK_HOME}/util         ${WORK_HOME}/logs         ${LOG_HOME}; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T07:51:13.458971473Z",
+          "created_by": "WORKDIR /app/TenentBackupScheduler",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T07:51:13.458971473Z",
+          "created_by": "CMD [\"/bin/sh\" \"-c\" \"/app/$APP_NAME/startup.sh\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:cc2447e1835a40530975ab80bb1f872fbab0f2a0faecf2ab16fbbb89b3589438",
+          "sha256:7b224650ba8852fb6651ec8dba67a5ad155a54b3502fcf07eefb04241ab104ed",
+          "sha256:b780604eec80378d2a295f35b713359c16ff99b6aa70b3bf88390dd8afed33fd",
+          "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+          "sha256:24ee2d5b8afcdca31f3af1e640455eba703f0251d34cb037306d76a0f6506a01",
+          "sha256:51b8d38f007df5f389dc28a0ee668b53d3cde04cd9dbdd0373a3239b4d69dbaf",
+          "sha256:f2dcce086ecd6d98c2852e6dc0a1e68fa155f4dec6990d88be871365b66a1baa",
+          "sha256:40b54521e9c915d9b64aca20b64f0f591d2f3ecd24e71c380fa2217c9f30ad38",
+          "sha256:fd2726af389fddd40c00e18ef5a12e777d7ef7284d6cb0aaec7b32b8576dc49f",
+          "sha256:e4121c7336640e914c64ba51c14b5ddf7782f804ce2ca207c5e817d40f437352",
+          "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "/bin/sh",
+          "-c",
+          "/app/$APP_NAME/startup.sh"
+        ],
+        "Env": [
+          "PATH=/app/TenentBackupScheduler:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "WORK_HOME=/app",
+          "APP_NAME=TenentBackupScheduler",
+          "LOG_HOME=/app/logs/shcema",
+          "USER=ez",
+          "GROUP=ez",
+          "TZ=Asia/Seoul"
+        ],
+        "User": "ez",
+        "WorkingDir": "/app/TenentBackupScheduler",
+        "ArgsEscaped": true
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "no6d6r14.private-ncr.gov-ntruss.com/tenent-backup-scheduler:0.2 (alpine 3.18.4)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    },
+    {
+      "Target": "Java",
+      "Class": "lang-pkgs",
+      "Type": "jar",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2023-20863",
+          "PkgName": "org.springframework:spring-core",
+          "PkgPath": "app/TenentBackupScheduler/TenentBackupScheduler.jar/BOOT-INF/lib/spring-core-6.0.7.jar",
+          "InstalledVersion": "6.0.7",
+          "FixedVersion": "6.0.8, 5.3.27, 5.2.24.RELEASE",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:722d23d842f3eb87bbc6599aa2c1d247c20d084b09775b77db36181f29f1816c",
+            "DiffID": "sha256:51b8d38f007df5f389dc28a0ee668b53d3cde04cd9dbdd0373a3239b4d69dbaf"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-20863",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "Spring Expression DoS Vulnerability",
+          "Description": "In spring framework versions prior to 5.2.24 release+ ,5.3.27+ and 6.0.8+ , it is possible for a user to provide a specially crafted SpEL expression that may cause a denial-of-service (DoS) condition.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-917"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-20863",
+            "https://github.com/spring-projects/spring-framework",
+            "https://github.com/spring-projects/spring-framework/commit/b73f5fcac22555f844cf27a7eeb876cb9d7f7f7e",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-20863",
+            "https://spring.io/security/cve-2023-20863",
+            "https://www.cve.org/CVERecord?id=CVE-2023-20863"
+          ],
+          "PublishedDate": "2023-04-13T20:15:00Z",
+          "LastModifiedDate": "2023-04-21T18:04:00Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "no6d6r14.private-ncr.gov-ntruss.com/psm-db-8:0.3",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.18.4"
+    },
+    "ImageID": "sha256:0f04479bab55a4bf392d65ac99b4b67863085553e4510339797c6180c67e3065",
+    "DiffIDs": [
+      "sha256:cc2447e1835a40530975ab80bb1f872fbab0f2a0faecf2ab16fbbb89b3589438",
+      "sha256:c737043e373cd02adc044ec50d9bb9d2223db83d49d76b1ae39c15700ac64475",
+      "sha256:b0869d61d8f387bb037b883c3aa0914485d73a624f6985ee3f3feeaa4115904a",
+      "sha256:c0e9a4dc3d6192c95021510abd45a42f23a38724408727a0f74d68ee9f9e7f39",
+      "sha256:69cd1124d1dcfbe77c203d7f8818c8e58a35a10134127bc83f061220d1255345",
+      "sha256:9f74a3cc2c8a98761aaae72c7b437422cdcce4affaa17ec326d12ab4bdd4b0b2",
+      "sha256:3539aa6db192076e5db22fb168f6f899378fc29c10cf74f7ddc1bcbf1eb2ac55",
+      "sha256:225699350352c1b0f317d5346ac7a706c5a4d85b12bbce040155e414096f3aa4",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+    ],
+    "RepoTags": [
+      "no6d6r14.private-ncr.gov-ntruss.com/psm-db-8:0.3"
+    ],
+    "RepoDigests": [
+      "no6d6r14.private-ncr.gov-ntruss.com/psm-db-8@sha256:60b03befd2c14997cdb5141645553bac87c713b99e2eec3be09a0cb25d32ed75"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2023-11-07T08:39:48.223986072Z",
+      "history": [
+        {
+          "created": "2023-09-28T21:19:27.686110063Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:756183bba9c7f4593c2b216e98e4208b9163c4c962ea0837ef88bd917609d001 in / "
+        },
+        {
+          "created": "2023-09-28T21:19:27.801479409Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-07T08:39:44.713799491Z",
+          "created_by": "ENV PG_MAJOR=13",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-07T08:39:44.713799491Z",
+          "created_by": "ENV PG_VERSION=13.12",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-07T08:39:44.713799491Z",
+          "created_by": "ENV USER=postgres",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-07T08:39:44.713799491Z",
+          "created_by": "ENV GROUP=postgres",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-07T08:39:44.713799491Z",
+          "created_by": "ENV HOME=/var/lib/postgresql",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-07T08:39:44.713799491Z",
+          "created_by": "ENV PGDATA=/var/lib/postgresql/pgdata/data",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-07T08:39:44.713799491Z",
+          "created_by": "ENV PGLOGS=/var/lib/postgresql/pgdata/data/logs",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-07T08:39:44.713799491Z",
+          "created_by": "ENV TZ=Asia/Seoul",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-07T08:39:44.713799491Z",
+          "created_by": "ENV LANG=en_US.utf8",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-07T08:39:44.713799491Z",
+          "created_by": "ENV POSTGRES_INITDB_ARGS=--auth-host=scram-sha-256 --auth-local=scram-sha-256",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-07T08:39:44.713799491Z",
+          "created_by": "ENV POSTGRES_HOST_AUTH_METHOD=scram-sha-256",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-07T08:39:44.713799491Z",
+          "created_by": "RUN /bin/sh -c set -eux; \taddgroup -g 70 -S postgres; \tadduser \t\t-u 70 \t\t-S -D \t\t-G postgres \t\t-H -h ${HOME} \t\t-s /bin/sh postgres; \tmkdir -p \t\t\t${HOME} \t\t\t/run/postgresql \t\t\t${PGDATA}; \tapk --no-cache update; \tapk --no-cache upgrade;     apk --no-cache add --upgrade postgresql${PG_MAJOR}=${PG_VERSION}-r0; \tapk cache clean; \trm -rf /var/cache/apk/*; \tchown -R postgres:postgres \t\t\t\t\t\t${HOME} \t\t\t\t\t\t/run/postgresql; \tchmod -R 755 ${PGDATA}; \tchown -R 70:70 ${PGDATA}; \tchown -R ${USER}:${GROUP} ${PGDATA}; \tpostgres --version; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-07T08:39:44.713799491Z",
+          "created_by": "USER postgres",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-07T08:39:45.211458879Z",
+          "created_by": "RUN /bin/sh -c set -eux; \tchmod 0700 ${PGDATA}; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-07T08:39:45.240569207Z",
+          "created_by": "COPY ./configure/postgresql-ncloud.conf /var/lib/postgresql/temp/postgresql.conf # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-07T08:39:45.26991419Z",
+          "created_by": "COPY ./configure/pg_hba.conf /var/lib/postgresql/temp # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-07T08:39:45.299808764Z",
+          "created_by": "COPY ./scripts/configuration.sh /var/lib/postgresql/ # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-07T08:39:47.671755428Z",
+          "created_by": "RUN /bin/sh -c chmod 500 ${HOME}/configuration.sh;     ${HOME}/configuration.sh; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-07T08:39:48.192317359Z",
+          "created_by": "RUN /bin/sh -c echo \"pg_ctl -D ${PGDATA} start\" \u003e ${HOME}/postgres-custom.start; \tchmod 500 ${HOME}/postgres-custom.start;     mkdir -p ${PGLOGS}; \tchmod 700 ${PGLOGS}; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-07T08:39:48.223986072Z",
+          "created_by": "WORKDIR /var/lib/postgresql",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-07T08:39:48.223986072Z",
+          "created_by": "EXPOSE map[5432/tcp:{}]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-07T08:39:48.223986072Z",
+          "created_by": "CMD [\"/bin/sh\" \"-c\" \"${HOME}/postgres-custom.start \u0026\u0026 tail -f /dev/null\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:cc2447e1835a40530975ab80bb1f872fbab0f2a0faecf2ab16fbbb89b3589438",
+          "sha256:c737043e373cd02adc044ec50d9bb9d2223db83d49d76b1ae39c15700ac64475",
+          "sha256:b0869d61d8f387bb037b883c3aa0914485d73a624f6985ee3f3feeaa4115904a",
+          "sha256:c0e9a4dc3d6192c95021510abd45a42f23a38724408727a0f74d68ee9f9e7f39",
+          "sha256:69cd1124d1dcfbe77c203d7f8818c8e58a35a10134127bc83f061220d1255345",
+          "sha256:9f74a3cc2c8a98761aaae72c7b437422cdcce4affaa17ec326d12ab4bdd4b0b2",
+          "sha256:3539aa6db192076e5db22fb168f6f899378fc29c10cf74f7ddc1bcbf1eb2ac55",
+          "sha256:225699350352c1b0f317d5346ac7a706c5a4d85b12bbce040155e414096f3aa4",
+          "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "/bin/sh",
+          "-c",
+          "${HOME}/postgres-custom.start \u0026\u0026 tail -f /dev/null"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "PG_MAJOR=13",
+          "PG_VERSION=13.12",
+          "USER=postgres",
+          "GROUP=postgres",
+          "HOME=/var/lib/postgresql",
+          "PGDATA=/var/lib/postgresql/pgdata/data",
+          "PGLOGS=/var/lib/postgresql/pgdata/data/logs",
+          "TZ=Asia/Seoul",
+          "LANG=en_US.utf8",
+          "POSTGRES_INITDB_ARGS=--auth-host=scram-sha-256 --auth-local=scram-sha-256",
+          "POSTGRES_HOST_AUTH_METHOD=scram-sha-256"
+        ],
+        "User": "postgres",
+        "WorkingDir": "/var/lib/postgresql",
+        "ExposedPorts": {
+          "5432/tcp": {}
+        },
+        "ArgsEscaped": true
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "no6d6r14.private-ncr.gov-ntruss.com/psm-db-8:0.3 (alpine 3.18.4)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    }
+  ]
+}

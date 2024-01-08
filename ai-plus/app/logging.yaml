@@ -1,0 +1,46 @@
+---
+
+version: 1
+
+disable_existing_loggers: False
+
+formatters:
+    simple:
+        format: "%(asctime)s :: <%(name)s> :: [%(levelname)s] :: [%(threadName)s] :: ln-%(lineno)s :: %(message)s"
+        datefmt: "%Y-%m-%d %H:%M:%S"
+
+handlers:
+    # console:
+    #     class: logging.StreamHandler
+    #     level: INFO
+    #     formatter: simple
+    #     stream: ext://sys.stdout
+    # logfile:
+    #     class: logging.handlers.RotatingFileHandler
+    #     level: DEBUG            
+    #     formatter: simple
+    #     filename: ./logs/info.log
+    #     maxBytes: 10485760 # 10MB
+    #     backupCount: 20
+    timeloginfo:
+        class: logging.handlers.TimedRotatingFileHandler
+        level: INFO
+        formatter: simple
+        when: D
+        backupCount: 1
+        filename: ./logs/timeinfo.log
+    timelogerror:
+        class: logging.handlers.TimedRotatingFileHandler
+        level: ERROR
+        formatter: simple
+        when: D
+        backupCount: 1
+        filename: ./logs/timeerror.log
+
+root:
+    # level: DEBUG
+    level: INFO
+    # handlers: [console, logfile]
+    handlers: [timeloginfo, timelogerror]
+    propagate: True
+

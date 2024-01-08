@@ -1,0 +1,49 @@
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-08-24 17:09 대한민국 표준시
+Nmap scan report for 192.168.1.2
+Host is up (0.0010s latency).
+MAC Address: 90:9F:33:98:69:55 (EFM Networks)
+Nmap scan report for 192.168.1.6
+Host is up (0.0010s latency).
+MAC Address: AC:87:A3:21:A9:C2 (Apple)
+Nmap scan report for 192.168.1.8
+Host is up (0.0010s latency).
+MAC Address: A8:E5:39:B6:D4:AA (Moimstone)
+Nmap scan report for 192.168.1.9
+Host is up (0.0010s latency).
+MAC Address: 00:E0:4C:68:03:3C (Realtek Semiconductor)
+Nmap scan report for 192.168.1.10
+Host is up (0.0010s latency).
+MAC Address: 00:07:89:83:35:23 (Allradio)
+Nmap scan report for 192.168.1.12
+Host is up (0.0010s latency).
+MAC Address: 3C:18:A0:07:40:BB (Luxshare Precision Industry Company Limited)
+Nmap scan report for 192.168.1.15
+Host is up (0.0010s latency).
+MAC Address: 00:E0:4C:36:91:B7 (Realtek Semiconductor)
+Nmap scan report for 192.168.1.16
+Host is up (0.0010s latency).
+MAC Address: 00:E0:4C:36:22:3E (Realtek Semiconductor)
+Nmap scan report for 192.168.1.18
+Host is up (0.0010s latency).
+MAC Address: 00:E0:4C:63:00:E4 (Realtek Semiconductor)
+Nmap scan report for 192.168.1.19
+Host is up (0.00s latency).
+MAC Address: A8:E5:39:B6:E8:92 (Moimstone)
+Nmap scan report for 192.168.1.20
+Host is up (0.00s latency).
+MAC Address: 50:EB:F6:78:6F:1F (Asustek Computer)
+Nmap scan report for 192.168.1.25
+Host is up (0.0010s latency).
+MAC Address: C0:18:50:70:22:6A (Quanta Computer)
+Nmap scan report for 192.168.1.30
+Host is up (0.0020s latency).
+MAC Address: E4:E7:49:1F:87:2F (Hewlett Packard)
+Nmap scan report for 192.168.1.37
+Host is up (0.0011s latency).
+MAC Address: A8:E5:39:B6:E9:F0 (Moimstone)
+Nmap scan report for 192.168.1.38
+Host is up (0.0015s latency).
+MAC Address: C8:4D:44:29:38:C4 (Shenzhen Jiapeng Huaxiang Technology)
+Nmap scan report for host.docker.internal (192.168.1.26)
+Host is up.
+Nmap done: 256 IP addresses (16 hosts up) scanned in 2.75 seconds

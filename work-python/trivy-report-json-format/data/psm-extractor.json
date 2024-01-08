@@ -1,0 +1,253 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "no6d6r14.private-ncr.gov-ntruss.com/psm-extractor:0.1",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.18.4"
+    },
+    "ImageID": "sha256:f11ec0543fb4b6e1a533834d14536ac81780e80be81ea35a541a2cf78f695f99",
+    "DiffIDs": [
+      "sha256:cc2447e1835a40530975ab80bb1f872fbab0f2a0faecf2ab16fbbb89b3589438",
+      "sha256:bd52b123303373f65b2a4216772f0804f1a83a6bfdf7df7dab44081b5c295ff3",
+      "sha256:3cee64507ae0b4e230bfcd339988a42aff021b97cec08d3bd04638ac69fc553b",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "sha256:42a1f7bf52b1f48218bf4ff520fb1ea4c724e99297c95a6421cbb213d9a8820d",
+      "sha256:5423ebf488535aa3125a614eaf34a821004d3378a18f65018b675a3abf0ae885",
+      "sha256:bbe9178b74caccbb2ab11eee799f8702d982ba5a406a11b21a9bfcb1d92aff15",
+      "sha256:8b55ed952858f19e24f3d9e7c0c62000332395ceb78d5ab62fa8793dc54cbebc",
+      "sha256:a6b69c46b8fbc633d247554ef4f562a56e2358b72ed015b3a1062b7fc03b3f97",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+    ],
+    "RepoTags": [
+      "no6d6r14.private-ncr.gov-ntruss.com/psm-extractor:0.1"
+    ],
+    "RepoDigests": [
+      "no6d6r14.private-ncr.gov-ntruss.com/psm-extractor@sha256:7ceb18959352882a235b6d7dd97d1e77f601d71ed15674a9ff2b714e494d83b5"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2023-11-08T07:48:54.881399944Z",
+      "history": [
+        {
+          "created": "2023-09-28T21:19:27.686110063Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:756183bba9c7f4593c2b216e98e4208b9163c4c962ea0837ef88bd917609d001 in / "
+        },
+        {
+          "created": "2023-09-28T21:19:27.801479409Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T04:38:57.020022505Z",
+          "created_by": "ENV WORK_HOME=/app",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T04:38:57.020022505Z",
+          "created_by": "ENV APP_NAME=PsmExtractor",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T04:38:57.020022505Z",
+          "created_by": "ENV PATH=/app/PsmExtractor:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T04:38:57.020022505Z",
+          "created_by": "ENV LOG_HOME=/app/logs",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T04:38:57.020022505Z",
+          "created_by": "ENV USER=ez",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T04:38:57.020022505Z",
+          "created_by": "ENV GROUP=ez",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T04:38:57.020022505Z",
+          "created_by": "RUN /bin/sh -c mkdir -p             ${WORK_HOME}/${APP_NAME}             ${LOG_HOME}             ; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T04:38:57.634560282Z",
+          "created_by": "RUN /bin/sh -c adduser ez --shell /bin/false --no-create-home;     usermod --shell /sbin/nologin ez;     chown -R ez:ez /app;     chown ${USER}:${GROUP} ${LOG_HOME}; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T04:38:57.707005586Z",
+          "created_by": "WORKDIR /app",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T04:38:57.707005586Z",
+          "created_by": "ENV TZ=Asia/Seoul",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T04:40:11.469744027Z",
+          "created_by": "RUN /bin/sh -c set -eux;     apk --no-cache update; \tapk --no-cache upgrade; \tapk --no-cache add openjdk17-jre=17.0.9_p8-r0; \tapk --no-cache add tzdata \u0026\u0026 \tcp /usr/share/zoneinfo/Asia/Seoul /etc/localtime \u0026\u0026 \techo \"Asia/Seoul\" \u003e /etc/timezone \tapk del tzdata ; \tapk cache clean; \trm -rf /var/cache/apk/*; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T07:48:53.208187183Z",
+          "created_by": "COPY ./PsmExtractor/. /app/PsmExtractor # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T07:48:53.561985373Z",
+          "created_by": "RUN /bin/sh -c chmod +x ${WORK_HOME}/${APP_NAME}/startup.sh; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T07:48:54.179009122Z",
+          "created_by": "RUN /bin/sh -c chmod 555 `find /${WORK_HOME}/${APP_NAME} -name \"*\" -and -not -name \"*log\"` ; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T07:48:54.179009122Z",
+          "created_by": "USER ez",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T07:48:54.794260448Z",
+          "created_by": "RUN /bin/sh -c chmod 755         ${WORK_HOME}/${APP_NAME}         ${LOG_HOME}         ; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T07:48:54.881399944Z",
+          "created_by": "WORKDIR /app/PsmExtractor",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T07:48:54.881399944Z",
+          "created_by": "CMD [\"/bin/sh\" \"-c\" \"/app/$APP_NAME/startup.sh\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:cc2447e1835a40530975ab80bb1f872fbab0f2a0faecf2ab16fbbb89b3589438",
+          "sha256:bd52b123303373f65b2a4216772f0804f1a83a6bfdf7df7dab44081b5c295ff3",
+          "sha256:3cee64507ae0b4e230bfcd339988a42aff021b97cec08d3bd04638ac69fc553b",
+          "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+          "sha256:42a1f7bf52b1f48218bf4ff520fb1ea4c724e99297c95a6421cbb213d9a8820d",
+          "sha256:5423ebf488535aa3125a614eaf34a821004d3378a18f65018b675a3abf0ae885",
+          "sha256:bbe9178b74caccbb2ab11eee799f8702d982ba5a406a11b21a9bfcb1d92aff15",
+          "sha256:8b55ed952858f19e24f3d9e7c0c62000332395ceb78d5ab62fa8793dc54cbebc",
+          "sha256:a6b69c46b8fbc633d247554ef4f562a56e2358b72ed015b3a1062b7fc03b3f97",
+          "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "/bin/sh",
+          "-c",
+          "/app/$APP_NAME/startup.sh"
+        ],
+        "Env": [
+          "PATH=/app/PsmExtractor:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "WORK_HOME=/app",
+          "APP_NAME=PsmExtractor",
+          "LOG_HOME=/app/logs",
+          "USER=ez",
+          "GROUP=ez",
+          "TZ=Asia/Seoul"
+        ],
+        "User": "ez",
+        "WorkingDir": "/app/PsmExtractor",
+        "ArgsEscaped": true
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "no6d6r14.private-ncr.gov-ntruss.com/psm-extractor:0.1 (alpine 3.18.4)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    },
+    {
+      "Target": "Java",
+      "Class": "lang-pkgs",
+      "Type": "jar",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2023-41080",
+          "PkgName": "org.apache.tomcat.embed:tomcat-embed-core",
+          "PkgPath": "app/PsmExtractor/PsmExtractor.jar/BOOT-INF/lib/tomcat-embed-core-10.1.12.jar",
+          "InstalledVersion": "10.1.12",
+          "FixedVersion": "8.5.93, 9.0.80, 10.1.13, 11.0.0-M11",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:78906588a33e30dc5249b283b48579f7f34f91b752e76b969ee6fdca61687cc4",
+            "DiffID": "sha256:5423ebf488535aa3125a614eaf34a821004d3378a18f65018b675a3abf0ae885"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-41080",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "Open Redirect vulnerability in FORM authentication",
+          "Description": "URL Redirection to Untrusted Site ('Open Redirect') vulnerability in FORM authentication feature Apache Tomcat.This issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.0-M10, from 10.1.0-M1 through 10.0.12, from 9.0.0-M1 through 9.0.79 and from 8.5.0 through 8.5.92.\n\nThe vulnerability is limited to the ROOT (default) web application.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-601"
+          ],
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V3Score": 6.1
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V3Score": 6.1
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V3Score": 6.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-41080",
+            "https://github.com/apache/tomcat",
+            "https://github.com/apache/tomcat/commit/4998ad745b67edeadefe541c94ed029b53933d3b",
+            "https://github.com/apache/tomcat/commit/77c0ce2d169efa248b64b992e547aad549ec906b",
+            "https://github.com/apache/tomcat/commit/bb4624a9f3e69d495182ebfa68d7983076407a27",
+            "https://github.com/apache/tomcat/commit/e3703c9abb8fe0d5602f6ba8a8f11d4b6940815a",
+            "https://lists.apache.org/thread/71wvwprtx2j2m54fovq9zr7gbm2wow2f",
+            "https://lists.debian.org/debian-lts-announce/2023/10/msg00020.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-41080",
+            "https://security.netapp.com/advisory/ntap-20230921-0006/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-41080",
+            "https://www.debian.org/security/2023/dsa-5521",
+            "https://www.debian.org/security/2023/dsa-5522"
+          ],
+          "PublishedDate": "2023-08-25T21:15:00Z",
+          "LastModifiedDate": "2023-11-03T19:00:00Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "no6d6r14.private-ncr.gov-ntruss.com/psm-summary:0.1",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.18.4"
+    },
+    "ImageID": "sha256:f8bcb2a8b0be97fe94b6e3159b0bef846a864ff1f7fb718a1035139e4a32bd1b",
+    "DiffIDs": [
+      "sha256:cc2447e1835a40530975ab80bb1f872fbab0f2a0faecf2ab16fbbb89b3589438",
+      "sha256:482e6ff7b9c2c1ae5496adfe180ff5762bd565502b417314e9c99c96fbffc91e",
+      "sha256:9002c6283c6d1441ded44fdcdb324e607265483ed6d2393bfc51cb42fce347d5",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "sha256:5b4b883bee88fe9c7d6d955724313b5b00aea81db10b734d2e87271994463f45",
+      "sha256:dfb1731d5d524285171a71528ced6d5405dfbe2f2a6d30a4dde1ba7cf7d27c22",
+      "sha256:f2c297acd2179dbf9a8c3865e4d5feb3530a481cc39a0cf548df500bb262f44b",
+      "sha256:c37a4de58a726e56a28bc6e11b50d4027cd2e3827ec4bf6d9d3b98e644bebb36",
+      "sha256:bff0d11a8bcbe67109ca2827f6913d5453cdc2d61adc1b31a17cf6680cc3d37e",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+    ],
+    "RepoTags": [
+      "no6d6r14.private-ncr.gov-ntruss.com/psm-summary:0.1"
+    ],
+    "RepoDigests": [
+      "no6d6r14.private-ncr.gov-ntruss.com/psm-summary@sha256:2b8124736aa91d515c1422b1193623cefc1f9811567971d5318202e42333259f"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2023-11-08T07:50:35.151121745Z",
+      "history": [
+        {
+          "created": "2023-09-28T21:19:27.686110063Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:756183bba9c7f4593c2b216e98e4208b9163c4c962ea0837ef88bd917609d001 in / "
+        },
+        {
+          "created": "2023-09-28T21:19:27.801479409Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T04:54:03.40849248Z",
+          "created_by": "ENV WORK_HOME=/app",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T04:54:03.40849248Z",
+          "created_by": "ENV APP_NAME=PsmSummary",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T04:54:03.40849248Z",
+          "created_by": "ENV PATH=/app/PsmSummary:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T04:54:03.40849248Z",
+          "created_by": "ENV LOG_HOME=/app/logs",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T04:54:03.40849248Z",
+          "created_by": "ENV USER=ez",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T04:54:03.40849248Z",
+          "created_by": "ENV GROUP=ez",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T04:54:03.40849248Z",
+          "created_by": "RUN /bin/sh -c mkdir -p             ${WORK_HOME}/${APP_NAME}             ${LOG_HOME}             ; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T04:54:03.964737762Z",
+          "created_by": "RUN /bin/sh -c adduser ez --shell /bin/false --no-create-home;     usermod --shell /sbin/nologin ez;     chown -R ez:ez /app;     chown ${USER}:${GROUP} ${LOG_HOME}; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T04:54:04.036143721Z",
+          "created_by": "WORKDIR /app",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T04:54:04.036143721Z",
+          "created_by": "ENV TZ=Asia/Seoul",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T04:55:15.551846496Z",
+          "created_by": "RUN /bin/sh -c set -eux;     apk --no-cache update; \tapk --no-cache upgrade; \tapk --no-cache add openjdk17-jre=17.0.9_p8-r0; \tapk --no-cache add tzdata \u0026\u0026 \tcp /usr/share/zoneinfo/Asia/Seoul /etc/localtime \u0026\u0026 \techo \"Asia/Seoul\" \u003e /etc/timezone \tapk del tzdata ; \tapk cache clean; \trm -rf /var/cache/apk/*; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T07:50:33.610055133Z",
+          "created_by": "COPY ./PsmSummary/. /app/PsmSummary # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T07:50:34.052959229Z",
+          "created_by": "RUN /bin/sh -c chmod +x ${WORK_HOME}/${APP_NAME}/startup.sh; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T07:50:34.537301924Z",
+          "created_by": "RUN /bin/sh -c chmod 555 `find /${WORK_HOME}/${APP_NAME} -name \"*\" -and -not -name \"*log\"` ; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T07:50:34.537301924Z",
+          "created_by": "USER ez",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T07:50:35.063908609Z",
+          "created_by": "RUN /bin/sh -c chmod 755         ${WORK_HOME}/${APP_NAME}         ${LOG_HOME}         ; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T07:50:35.151121745Z",
+          "created_by": "WORKDIR /app/PsmSummary",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T07:50:35.151121745Z",
+          "created_by": "CMD [\"/bin/sh\" \"-c\" \"/app/$APP_NAME/startup.sh\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:cc2447e1835a40530975ab80bb1f872fbab0f2a0faecf2ab16fbbb89b3589438",
+          "sha256:482e6ff7b9c2c1ae5496adfe180ff5762bd565502b417314e9c99c96fbffc91e",
+          "sha256:9002c6283c6d1441ded44fdcdb324e607265483ed6d2393bfc51cb42fce347d5",
+          "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+          "sha256:5b4b883bee88fe9c7d6d955724313b5b00aea81db10b734d2e87271994463f45",
+          "sha256:dfb1731d5d524285171a71528ced6d5405dfbe2f2a6d30a4dde1ba7cf7d27c22",
+          "sha256:f2c297acd2179dbf9a8c3865e4d5feb3530a481cc39a0cf548df500bb262f44b",
+          "sha256:c37a4de58a726e56a28bc6e11b50d4027cd2e3827ec4bf6d9d3b98e644bebb36",
+          "sha256:bff0d11a8bcbe67109ca2827f6913d5453cdc2d61adc1b31a17cf6680cc3d37e",
+          "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "/bin/sh",
+          "-c",
+          "/app/$APP_NAME/startup.sh"
+        ],
+        "Env": [
+          "PATH=/app/PsmSummary:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "WORK_HOME=/app",
+          "APP_NAME=PsmSummary",
+          "LOG_HOME=/app/logs",
+          "USER=ez",
+          "GROUP=ez",
+          "TZ=Asia/Seoul"
+        ],
+        "User": "ez",
+        "WorkingDir": "/app/PsmSummary",
+        "ArgsEscaped": true
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "no6d6r14.private-ncr.gov-ntruss.com/psm-summary:0.1 (alpine 3.18.4)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "no6d6r14.private-ncr.gov-ntruss.com/psm-frs:0.1",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.18.4"
+    },
+    "ImageID": "sha256:b74e3532c8d3ade658cc94e70557394633ad7e6d439b1c863c25c13926c9179d",
+    "DiffIDs": [
+      "sha256:cc2447e1835a40530975ab80bb1f872fbab0f2a0faecf2ab16fbbb89b3589438",
+      "sha256:5a507e1605fa63498ae3c0ea566e0ed925466e09ccad77283fc89a5ad334764e",
+      "sha256:4053525bbb0d11f6e0c5d5323cbc78d26b6089210a7b9305687bbdbb37b87a68",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "sha256:ab603b52ad88cf31a8a97cfb41b89a386dadfe88859ecd44af579209c3cf5c4a",
+      "sha256:d18f9e545009cae3ff903c2b179365195b697295036d9e53aa6720f2f7346524",
+      "sha256:37fec16e0b6bddf6c515a5fc287d5b15305e63883d440c16d0679f815195af89",
+      "sha256:be8f6f3c4559fb19e1d29de5cb3d7eb211954be2b27608d15cf6822592699f23",
+      "sha256:12206d66488cae0476760373cf1219d89bb6026f1c4067e2df90a4c4f3782b75",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+    ],
+    "RepoTags": [
+      "no6d6r14.private-ncr.gov-ntruss.com/psm-frs:0.1"
+    ],
+    "RepoDigests": [
+      "no6d6r14.private-ncr.gov-ntruss.com/psm-frs@sha256:0ddc140fff9c8220cea9f372c70e7ee47a90e288fb10247d7dcc11508fcf4ad3"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2023-11-08T05:24:59.588366291Z",
+      "history": [
+        {
+          "created": "2023-09-28T21:19:27.686110063Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:756183bba9c7f4593c2b216e98e4208b9163c4c962ea0837ef88bd917609d001 in / "
+        },
+        {
+          "created": "2023-09-28T21:19:27.801479409Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T05:05:19.19474206Z",
+          "created_by": "ENV WORK_HOME=/app",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T05:05:19.19474206Z",
+          "created_by": "ENV APP_NAME=FileRcvServer",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T05:05:19.19474206Z",
+          "created_by": "ENV PATH=/app/FileRcvServer:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T05:05:19.19474206Z",
+          "created_by": "ENV LOG_HOME=/app/logs",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T05:05:19.19474206Z",
+          "created_by": "ENV USER=ez",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T05:05:19.19474206Z",
+          "created_by": "ENV GROUP=ez",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T05:05:19.19474206Z",
+          "created_by": "RUN /bin/sh -c mkdir -p             ${WORK_HOME}/${APP_NAME}             ${LOG_HOME}             ; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T05:05:19.65134251Z",
+          "created_by": "RUN /bin/sh -c adduser ez --shell /bin/false --no-create-home;     usermod --shell /sbin/nologin ez;     chown -R ez:ez /app;     chown ${USER}:${GROUP} ${LOG_HOME}; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T05:05:19.676417697Z",
+          "created_by": "WORKDIR /app",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T05:05:19.676417697Z",
+          "created_by": "ENV TZ=Asia/Seoul",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T05:06:32.494087099Z",
+          "created_by": "RUN /bin/sh -c set -eux;     apk --no-cache update; \tapk --no-cache upgrade; \tapk --no-cache add openjdk17-jre=17.0.9_p8-r0; \tapk --no-cache add tzdata \u0026\u0026 \tcp /usr/share/zoneinfo/Asia/Seoul /etc/localtime \u0026\u0026 \techo \"Asia/Seoul\" \u003e /etc/timezone \tapk del tzdata ; \tapk cache clean; \trm -rf /var/cache/apk/*; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T05:06:32.494087099Z",
+          "created_by": "EXPOSE map[46004/tcp:{}]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T05:24:58.392329202Z",
+          "created_by": "COPY ./FileRcvServer/. /app/FileRcvServer # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T05:24:58.66811317Z",
+          "created_by": "RUN /bin/sh -c chmod +x ${WORK_HOME}/${APP_NAME}/startup.sh; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T05:24:59.176358748Z",
+          "created_by": "RUN /bin/sh -c chmod 555 `find /${WORK_HOME}/${APP_NAME} -name \"*\" -and -not -name \"*log\"` ; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T05:24:59.176358748Z",
+          "created_by": "USER ez",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T05:24:59.555968341Z",
+          "created_by": "RUN /bin/sh -c chmod 755         ${WORK_HOME}/${APP_NAME}         ${LOG_HOME}         ; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T05:24:59.588366291Z",
+          "created_by": "WORKDIR /app/FileRcvServer",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T05:24:59.588366291Z",
+          "created_by": "CMD [\"/bin/sh\" \"-c\" \"/app/$APP_NAME/startup.sh\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:cc2447e1835a40530975ab80bb1f872fbab0f2a0faecf2ab16fbbb89b3589438",
+          "sha256:5a507e1605fa63498ae3c0ea566e0ed925466e09ccad77283fc89a5ad334764e",
+          "sha256:4053525bbb0d11f6e0c5d5323cbc78d26b6089210a7b9305687bbdbb37b87a68",
+          "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+          "sha256:ab603b52ad88cf31a8a97cfb41b89a386dadfe88859ecd44af579209c3cf5c4a",
+          "sha256:d18f9e545009cae3ff903c2b179365195b697295036d9e53aa6720f2f7346524",
+          "sha256:37fec16e0b6bddf6c515a5fc287d5b15305e63883d440c16d0679f815195af89",
+          "sha256:be8f6f3c4559fb19e1d29de5cb3d7eb211954be2b27608d15cf6822592699f23",
+          "sha256:12206d66488cae0476760373cf1219d89bb6026f1c4067e2df90a4c4f3782b75",
+          "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "/bin/sh",
+          "-c",
+          "/app/$APP_NAME/startup.sh"
+        ],
+        "Env": [
+          "PATH=/app/FileRcvServer:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "WORK_HOME=/app",
+          "APP_NAME=FileRcvServer",
+          "LOG_HOME=/app/logs",
+          "USER=ez",
+          "GROUP=ez",
+          "TZ=Asia/Seoul"
+        ],
+        "User": "ez",
+        "WorkingDir": "/app/FileRcvServer",
+        "ExposedPorts": {
+          "46004/tcp": {}
+        },
+        "ArgsEscaped": true
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "no6d6r14.private-ncr.gov-ntruss.com/psm-frs:0.1 (alpine 3.18.4)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    },
+    {
+      "Target": "Java",
+      "Class": "lang-pkgs",
+      "Type": "jar",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2023-46120",
+          "PkgName": "com.rabbitmq:amqp-client",
+          "PkgPath": "app/FileRcvServer/FileRcvServer.jar/BOOT-INF/lib/amqp-client-5.17.1.jar",
+          "InstalledVersion": "5.17.1",
+          "FixedVersion": "5.18.0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:3897666bbd7f00a7d080ae60321358f375f588f384d15a71a7eba5ae78fb9228",
+            "DiffID": "sha256:d18f9e545009cae3ff903c2b179365195b697295036d9e53aa6720f2f7346524"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-46120",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "RabbitMQ Java client's Lack of Message Size Limitation leads to Remote DoS Attack",
+          "Description": "The RabbitMQ Java client library allows Java and JVM-based applications to connect to and interact with RabbitMQ nodes. `maxBodyLebgth` was not used when receiving Message objects.  Attackers could send a very large Message causing a memory overflow and triggering an OOM Error. Users of RabbitMQ may suffer from  DoS attacks from RabbitMQ Java client which will ultimately exhaust the memory of the consumer. This vulnerability was patched in version 5.18.0.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-400"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 4.9
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://github.com/rabbitmq/rabbitmq-java-client",
+            "https://github.com/rabbitmq/rabbitmq-java-client/commit/714aae602dcae6cb4b53cadf009323ebac313cc8",
+            "https://github.com/rabbitmq/rabbitmq-java-client/issues/1062",
+            "https://github.com/rabbitmq/rabbitmq-java-client/releases/tag/v5.18.0",
+            "https://github.com/rabbitmq/rabbitmq-java-client/security/advisories/GHSA-mm8h-8587-p46h",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-46120"
+          ],
+          "PublishedDate": "2023-10-25T18:17:00Z",
+          "LastModifiedDate": "2023-11-01T16:42:00Z"
+        }
+      ]
+    }
+  ]
+}

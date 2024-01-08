@@ -1,0 +1,152 @@
+apiVersion: v1
+kind: Service
+metadata:
+  finalizers:
+  - service.kubernetes.io/load-balancer-cleanup
+  labels:
+    service: opensearch-dashboards
+  name: opensearch-dashboards
+  namespace: default
+spec:
+  allocateLoadBalancerNodePorts: true
+  externalTrafficPolicy: Cluster
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - port: 5601
+    protocol: TCP
+    targetPort: 5601
+  selector:
+    service: opensearch-dashboards
+  sessionAffinity: None
+  type: LoadBalancer
+---
+apiVersion: v1
+kind: Service
+metadata:
+  finalizers:
+  - service.kubernetes.io/load-balancer-cleanup
+  labels:
+    service: opensearch-node1
+  name: opensearch-node1
+  namespace: default
+spec:
+  allocateLoadBalancerNodePorts: true
+  externalTrafficPolicy: Cluster
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - name: "9200"
+    port: 9200
+    protocol: TCP
+    targetPort: 9200
+  - name: "9600"
+    port: 9600
+    protocol: TCP
+    targetPort: 9600
+  selector:
+    service: opensearch-node1
+  sessionAffinity: None
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: opensearch-dashboards
+  labels:
+    service: opensearch-dashboards
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: opensearch-dashboards
+  template:
+    metadata:
+      labels:
+        # network/opensearch-net: "true"
+        service: opensearch-dashboards
+    spec:
+      containers:
+      - name: opensearch-dashboards        
+        image: opensearchproject/opensearch-dashboards
+        env:
+        - name: OPENSEARCH_HOSTS
+          value: https://opensearch-node1:9200
+        ports:
+        - containerPort: 5601
+      restartPolicy: Always
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: opensearch-node1
+  labels:
+    service: opensearch-node1
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: opensearch-node1
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        # network/opensearch-net: "true"
+        service: opensearch-node1
+    spec:
+      containers:
+      - name: opensearch-node1
+        image: opensearchproject/opensearch
+        imagePullPolicy: Always        
+        # command: ['sh', '-c', 'echo "262144" > /proc/sys/vm/max_map_count']        
+        # command: ['cat', '/etc/sysctl.conf']
+        # command: ['uname', '-a']
+        # command: ['sh', '-c', 'sysctl -w vm.max_map_count=262144']
+        env:
+        - name: OPENSEARCH_JAVA_OPTS
+          value: -Xms512m -Xmx512m
+        - name: bootstrap.memory_lock
+          value: "false"
+        # important !!
+        # - name: vm.max_map_count
+        #   value: "262144"        
+        # important !! <-- better than 
+        - name: node.store.allow_mmap
+          value: "false"
+        - name: cluster.initial_master_nodes
+          value: opensearch-node1
+        - name: cluster.name
+          value: opensearch-cluster
+        - name: discovery.seed_hosts
+          value: opensearch-node1
+        - name: node.name
+          value: opensearch-node1
+        ports:
+        - containerPort: 9200
+        - containerPort: 9600
+        # resources: {}      
+      restartPolicy: Always
+# ---
+# apiVersion: networking.k8s.io/v1
+# kind: NetworkPolicy
+# metadata:
+#   name: opensearch-net
+#   namespace: default
+# spec:
+#   policyTypes:
+#     - Ingress
+#   ingress:
+#   - from:
+#     - podSelector:
+#         matchLabels:
+#           network/opensearch-net: "true"
+#   podSelector:
+#     matchLabels:
+#       network/opensearch-net: "true"

@@ -1,0 +1,45 @@
+server:
+  port: 9085
+  address: 0.0.0.0
+
+external:
+#  url_req: "http://127.0.0.1:5000/req_predict"
+#  url_polling: "http://127.0.0.1:5000/polling_predict"
+  url_req: "http://192.168.0.51:5000/req_predict"
+  url_polling: "http://192.168.0.51:5000/polling_predict"
+#  url: "http://192.168.0.51:5000/predict"
+  table: biz_log_summary
+  # rule_biz table 사용시 log_seq 값 사용
+  emp_detail: emp_detail
+  # rule_biz table 에 추가
+  rule_biz: rule_biz
+  period: 1
+  prophet_model_period: 1
+  emp_detail_columns: [occr_dt,dept_id,emp_user_id,rule_cd,rule_cnt,dng_val,dept_name,emp_user_name,rule_nm,log_delimiter,system_seq,rule_result_type,rule_view_type,limit_cnt]
+  save_json_path: c:\\ai-plus\\request.json
+
+spring:
+  datasource:
+    hikari:
+      driver-class-name: org.postgresql.Driver        
+      jdbc-url: jdbc:postgresql://192.168.0.51:5432/psm?autoReconnect=true&useUnicode=true&characterEncoding=utf-8
+#      jdbc-url: jdbc:postgresql://127.0.0.1:5432/psm?autoReconnect=true&useUnicode=true&characterEncoding=utf-8
+      username: psm
+      password: psm123
+      # auto-commit: false
+      # connection-test-query: SELECT 1
+      # transaction-isolation: TRANSACTION_READ_UNCOMMITTED
+#      pool-name: ai-plus-pool
+      pool-name: ai-plus-pool
+      connection-timeout: 3000
+      validation-timeout: 3000
+      minimum-idle: 1
+      max-lifetime: 15000
+      maximum-pool-size: 10        
+      # multi-rows insert option
+      data-source-properties: 
+        reWriteBatchedInserts: true
+        
+#  main:
+#    web-application-type: none
+        

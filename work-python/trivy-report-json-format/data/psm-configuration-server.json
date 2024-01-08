@@ -1,0 +1,344 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "no6d6r14.private-ncr.gov-ntruss.com/psm-configuration-server:0.3",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.18.4"
+    },
+    "ImageID": "sha256:7e2828b0548887797960c191ab34bf0b36ba9ee23f6bcc097a5bfe287210f91a",
+    "DiffIDs": [
+      "sha256:cc2447e1835a40530975ab80bb1f872fbab0f2a0faecf2ab16fbbb89b3589438",
+      "sha256:0249a5a8f1ffdc071797768ba1a49629209304e3ccec16548008bb49a2162ba0",
+      "sha256:b5a1cd834a985343ede1dfdc3d96bb1f75490be0ea31719595424f107717914f",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "sha256:ac3fc5663e9d4bb7e8c912f880bb1ffd3a75cdf19e1ac5574c98e573a5e6ff81",
+      "sha256:83742dc7993eb45165c9788034c757fe083fc688491f1b8401376a0ec72ab001",
+      "sha256:742159f1f32f6dedc0befd4fae36018ad0533db146ec1a0cfffc87c6465ef48e",
+      "sha256:7a9b226197ac80e759a278debadc0a5cca8fb068af74e95ad7949adf80debb10",
+      "sha256:ea090d3b39e6ddb28f4434f4bdcc5235525ba236709c2a8ccffac57110245d6a",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+    ],
+    "RepoTags": [
+      "no6d6r14.private-ncr.gov-ntruss.com/psm-configuration-server:0.3"
+    ],
+    "RepoDigests": [
+      "no6d6r14.private-ncr.gov-ntruss.com/psm-configuration-server@sha256:e57f0569e2e61905b0f2bcd3cad01f06f4ebc17999dabcb06126d31e628a3fae"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2023-11-08T08:30:24.06643488Z",
+      "history": [
+        {
+          "created": "2023-09-28T21:19:27.686110063Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:756183bba9c7f4593c2b216e98e4208b9163c4c962ea0837ef88bd917609d001 in / "
+        },
+        {
+          "created": "2023-09-28T21:19:27.801479409Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T08:05:43.149004813Z",
+          "created_by": "ENV WORK_HOME=/app",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T08:05:43.149004813Z",
+          "created_by": "ENV APP_NAME=PsmConfigurationServer",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T08:05:43.149004813Z",
+          "created_by": "ENV PATH=/app/PsmConfigurationServer:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T08:05:43.149004813Z",
+          "created_by": "ENV LOG_HOME=/app/logs/schema",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T08:05:43.149004813Z",
+          "created_by": "ENV USER=ez",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T08:05:43.149004813Z",
+          "created_by": "ENV GROUP=ez",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T08:05:43.149004813Z",
+          "created_by": "RUN /bin/sh -c mkdir -p             ${WORK_HOME}/${APP_NAME}             ${LOG_HOME}             ; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T08:05:43.597668501Z",
+          "created_by": "RUN /bin/sh -c adduser ez --shell /bin/false --no-create-home;     usermod --shell /sbin/nologin ez;     chown -R ez:ez /app;     chown ${USER}:${GROUP} ${LOG_HOME}; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T08:05:43.621176856Z",
+          "created_by": "WORKDIR /app",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T08:05:43.621176856Z",
+          "created_by": "ENV TZ=Asia/Seoul",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T08:08:43.383820831Z",
+          "created_by": "RUN /bin/sh -c set -eux;     apk --no-cache update; \tapk --no-cache upgrade; \tapk --no-cache add openjdk17-jre=17.0.9_p8-r0; \tapk --no-cache add tzdata \u0026\u0026 \tcp /usr/share/zoneinfo/${TZ} /etc/localtime \u0026\u0026 \techo ${TZ} \u003e /etc/timezone \tapk del tzdata ; \tapk cache clean; \trm -rf /var/cache/apk/*; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T08:30:22.611930125Z",
+          "created_by": "COPY ./PsmConfigurationServer/. /app/PsmConfigurationServer # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T08:30:22.92373757Z",
+          "created_by": "RUN /bin/sh -c chmod +x ${WORK_HOME}/${APP_NAME}/startup.sh; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T08:30:23.517120149Z",
+          "created_by": "RUN /bin/sh -c chmod 555 `find /${WORK_HOME}/${APP_NAME} -name \"*\" -and -not -name \"*log\"` ; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T08:30:23.517120149Z",
+          "created_by": "USER ez",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-11-08T08:30:24.039917795Z",
+          "created_by": "RUN /bin/sh -c chmod 755         ${WORK_HOME}/${APP_NAME}         ${LOG_HOME}         ; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T08:30:24.06643488Z",
+          "created_by": "WORKDIR /app/PsmConfigurationServer",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-11-08T08:30:24.06643488Z",
+          "created_by": "CMD [\"/bin/sh\" \"-c\" \"/app/$APP_NAME/startup.sh\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:cc2447e1835a40530975ab80bb1f872fbab0f2a0faecf2ab16fbbb89b3589438",
+          "sha256:0249a5a8f1ffdc071797768ba1a49629209304e3ccec16548008bb49a2162ba0",
+          "sha256:b5a1cd834a985343ede1dfdc3d96bb1f75490be0ea31719595424f107717914f",
+          "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+          "sha256:ac3fc5663e9d4bb7e8c912f880bb1ffd3a75cdf19e1ac5574c98e573a5e6ff81",
+          "sha256:83742dc7993eb45165c9788034c757fe083fc688491f1b8401376a0ec72ab001",
+          "sha256:742159f1f32f6dedc0befd4fae36018ad0533db146ec1a0cfffc87c6465ef48e",
+          "sha256:7a9b226197ac80e759a278debadc0a5cca8fb068af74e95ad7949adf80debb10",
+          "sha256:ea090d3b39e6ddb28f4434f4bdcc5235525ba236709c2a8ccffac57110245d6a",
+          "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "/bin/sh",
+          "-c",
+          "/app/$APP_NAME/startup.sh"
+        ],
+        "Env": [
+          "PATH=/app/PsmConfigurationServer:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "WORK_HOME=/app",
+          "APP_NAME=PsmConfigurationServer",
+          "LOG_HOME=/app/logs/schema",
+          "USER=ez",
+          "GROUP=ez",
+          "TZ=Asia/Seoul"
+        ],
+        "User": "ez",
+        "WorkingDir": "/app/PsmConfigurationServer",
+        "ArgsEscaped": true
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "no6d6r14.private-ncr.gov-ntruss.com/psm-configuration-server:0.3 (alpine 3.18.4)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    },
+    {
+      "Target": "Java",
+      "Class": "lang-pkgs",
+      "Type": "jar",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2023-33201",
+          "PkgName": "org.bouncycastle:bcprov-jdk18on",
+          "PkgPath": "app/PsmConfigurationServer/PsmConfigurationServer.jar/BOOT-INF/lib/bcprov-jdk18on-1.73.jar",
+          "InstalledVersion": "1.73",
+          "FixedVersion": "1.74",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:95b5e266217ba8bf41bd1548bdf1ab148d98ed2ed3faae3c687d9d2d81b503d6",
+            "DiffID": "sha256:83742dc7993eb45165c9788034c757fe083fc688491f1b8401376a0ec72ab001"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-33201",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "potential  blind LDAP injection attack using a self-signed certificate",
+          "Description": "Bouncy Castle For Java before 1.74 is affected by an LDAP injection vulnerability. The vulnerability only affects applications that use an LDAP CertStore from Bouncy Castle to validate X.509 certificates. During the certificate validation process, Bouncy Castle inserts the certificate's Subject Name into an LDAP search filter without any escaping, which leads to an LDAP injection vulnerability.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-33201",
+            "https://bouncycastle.org",
+            "https://bouncycastle.org/releasenotes.html#r1rv74",
+            "https://github.com/bcgit/bc-java",
+            "https://github.com/bcgit/bc-java/commit/ccf93ca736b89250ff4ce079a5aa56f5cbf0ebbd",
+            "https://github.com/bcgit/bc-java/commit/e8c409a8389c815ea3fda5e8b94c92fdfe583bcc",
+            "https://github.com/bcgit/bc-java/commits/main/prov/src/main/java/org/bouncycastle/jce/provider/X509LDAPCertStoreSpi.java",
+            "https://github.com/bcgit/bc-java/wiki/CVE-2023-33201",
+            "https://lists.debian.org/debian-lts-announce/2023/08/msg00000.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-33201",
+            "https://security.netapp.com/advisory/ntap-20230824-0008/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-33201"
+          ],
+          "PublishedDate": "2023-07-05T03:15:00Z",
+          "LastModifiedDate": "2023-08-24T19:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-4759",
+          "PkgName": "org.eclipse.jgit:org.eclipse.jgit",
+          "PkgPath": "app/PsmConfigurationServer/PsmConfigurationServer.jar/BOOT-INF/lib/org.eclipse.jgit-6.4.0.202211300538-r.jar",
+          "InstalledVersion": "6.4.0.202211300538-r",
+          "FixedVersion": "6.6.1.202309021850-r",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:95b5e266217ba8bf41bd1548bdf1ab148d98ed2ed3faae3c687d9d2d81b503d6",
+            "DiffID": "sha256:83742dc7993eb45165c9788034c757fe083fc688491f1b8401376a0ec72ab001"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-4759",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "arbitrary file overwrite",
+          "Description": "Arbitrary File Overwrite in Eclipse JGit \u003c= 6.6.0\n\nIn Eclipse JGit, all versions \u003c= 6.6.0.202305301015-r, a symbolic link present in a specially crafted git repository can be used to write a file to locations outside the working tree when this repository is cloned with JGit to a case-insensitive filesystem, or when a checkout from a clone of such a repository is performed on a case-insensitive filesystem.\n\nThis can happen on checkout (DirCacheCheckout), merge (ResolveMerger via its WorkingTreeUpdater), pull (PullCommand using merge), and when applying a patch (PatchApplier). This can be exploited for remote code execution (RCE), for instance if the file written outside the working tree is a git filter that gets executed on a subsequent git command.\n\nThe issue occurs only on case-insensitive filesystems, like the default filesystems on Windows and macOS. The user performing the clone or checkout must have the rights to create symbolic links for the problem to occur, and symbolic links must be enabled in the git configuration.\n\nSetting git configuration option core.symlinks = false before checking out avoids the problem.\n\nThe issue was fixed in Eclipse JGit version 6.6.1.202309021850-r and 6.7.0.202309050840-r, available via  Maven Central https://repo1.maven.org/maven2/org/eclipse/jgit/  and  repo.eclipse.org https://repo.eclipse.org/content/repositories/jgit-releases/ .\n\n\nThe JGit maintainers would like to thank RyotaK for finding and reporting this issue.\n\n\n\n",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-59",
+            "CWE-178"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-4759",
+            "https://git.eclipse.org/c/jgit/jgit.git",
+            "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=9072103f3b3cf64dd12ad2949836ab98f62dabf1",
+            "https://gitlab.eclipse.org/security/vulnerability-reports/-/issues/11",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-4759",
+            "https://projects.eclipse.org/projects/technology.jgit/releases/6.6.1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-4759"
+          ],
+          "PublishedDate": "2023-09-12T10:15:00Z",
+          "LastModifiedDate": "2023-09-18T13:54:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-20863",
+          "PkgName": "org.springframework:spring-core",
+          "PkgPath": "app/PsmConfigurationServer/PsmConfigurationServer.jar/BOOT-INF/lib/spring-core-6.0.7.jar",
+          "InstalledVersion": "6.0.7",
+          "FixedVersion": "6.0.8, 5.3.27, 5.2.24.RELEASE",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:95b5e266217ba8bf41bd1548bdf1ab148d98ed2ed3faae3c687d9d2d81b503d6",
+            "DiffID": "sha256:83742dc7993eb45165c9788034c757fe083fc688491f1b8401376a0ec72ab001"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-20863",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "Spring Expression DoS Vulnerability",
+          "Description": "In spring framework versions prior to 5.2.24 release+ ,5.3.27+ and 6.0.8+ , it is possible for a user to provide a specially crafted SpEL expression that may cause a denial-of-service (DoS) condition.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-917"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-20863",
+            "https://github.com/spring-projects/spring-framework",
+            "https://github.com/spring-projects/spring-framework/commit/b73f5fcac22555f844cf27a7eeb876cb9d7f7f7e",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-20863",
+            "https://spring.io/security/cve-2023-20863",
+            "https://www.cve.org/CVERecord?id=CVE-2023-20863"
+          ],
+          "PublishedDate": "2023-04-13T20:15:00Z",
+          "LastModifiedDate": "2023-04-21T18:04:00Z"
+        }
+      ]
+    }
+  ]
+}

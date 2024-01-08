@@ -1,0 +1,6 @@
+2023-06-23 12:32:22 PM :: <app> :: [INFO] :: [Dummy-1] :: ln-81 :: info log
+2023-06-23 12:32:22 PM :: <app> :: [WARNING] :: [Dummy-1] :: ln-82 :: warning log
+2023-06-23 12:32:22 PM :: <app> :: [ERROR] :: [Dummy-1] :: ln-83 :: error log
+2023-06-23 12:38:42 PM :: <app> :: [INFO] :: [Dummy-1] :: ln-81 :: info log
+2023-06-23 12:38:42 PM :: <app> :: [WARNING] :: [Dummy-1] :: ln-82 :: warning log
+2023-06-23 12:38:42 PM :: <app> :: [ERROR] :: [Dummy-1] :: ln-83 :: error log

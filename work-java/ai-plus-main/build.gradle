@@ -1,0 +1,48 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '2.7.11'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'com.easycerti'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compileOnly 'org.springframework.boot:spring-boot-configuration-processor'
+	compileOnly 'org.projectlombok:lombok'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	runtimeOnly 'org.postgresql:postgresql'
+	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation group: 'org.json', name: 'json', version: '20210307'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
+
+bootJar {
+  enabled=true
+  archiveFileName="aiplus.jar"
+  /*
+  manifest {
+  	  attributes 'build-time': new Date().format('yyyy-MM-dd HH:mm:ss')
+      attributes 'git-time': grgit.head().dateTime.format("yyyy-MM-dd HH:mm:ss")
+      attributes 'git-id': grgit.head().id
+  }
+  */
+}

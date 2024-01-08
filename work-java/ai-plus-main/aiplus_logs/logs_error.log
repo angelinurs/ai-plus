@@ -1,0 +1,2 @@
+2023-06-27 15:49:45 [ERROR] c.e.logcollector.dao.PollingDAO -  INSERT INTO emp_detail ( occr_dt, dept_id, emp_user_id, rule_cd, rule_cnt, dng_val, dept_name, emp_user_name, rule_nm, log_delimiter, system_seq, rule_result_type, rule_view_type, limit_cnt)  VALUES ( to_char(to_date('2023-06-20', 'YYYY-MM-DD'), 'YYYYMMDD') , 'DEPT00002', 'aiplus1', 5500, 2, 0, '플랫폼개발팀', 'AI데모1', '(AI) 개인별 이용 패턴 학습기반 비정상 이용 행위 탐지', 'BA', '02', '1', 'M', 1);
+2023-06-27 15:49:45 [ERROR] c.e.l.controller.TestController - Index: 0, Size: 0

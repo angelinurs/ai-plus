@@ -1,0 +1,6 @@
+2023-06-23 12:30:10 :: <app> :: [INFO] :: [Thread-2] :: ln-32 :: info log
+2023-06-23 12:30:10 :: <app> :: [WARNING] :: [Thread-2] :: ln-33 :: warning log
+2023-06-23 12:30:10 :: <app> :: [ERROR] :: [Thread-2] :: ln-34 :: error log
+2023-06-23 12:30:11 :: <root> :: [INFO] :: [Thread-2] :: ln-35 :: merong
+2023-06-23 12:30:11 :: <module.occurlog> :: [INFO] :: [Thread-2] :: ln-8 :: occurlogs < INFO >
+2023-06-23 12:30:11 :: <module.occurlog> :: [ERROR] :: [Thread-2] :: ln-9 :: occurlogs < ERROR >
