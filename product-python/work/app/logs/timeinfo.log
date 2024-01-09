@@ -1,0 +1,8 @@
+2023-06-29 09:00:31 :: <connections.connections> :: [INFO] :: [Dummy-1] :: ln-40 :: {'seq': '175', 'req-date': '20230629 09:00:31', 'status-code': '0'}
+2023-06-29 09:00:31 :: <app> :: [INFO] :: [Dummy-1] :: ln-111 :: 127.0.0.1 request -> seq_no [seq:175]
+2023-06-29 09:00:31 :: <module.forecast> :: [INFO] :: [Dummy-1] :: ln-151 :: Excute method req_predict
+2023-06-29 09:00:32 :: <module.forecast> :: [INFO] :: [Dummy-1] :: ln-50 :: Excute method run_to_predict
+2023-06-29 09:00:32 :: <prophet> :: [INFO] :: [Dummy-1] :: ln-931 :: Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2023-06-29 09:00:43 :: <cmdstanpy> :: [INFO] :: [Dummy-1] :: ln-1693 :: Chain [1] start processing
+2023-06-29 09:03:02 :: <cmdstanpy> :: [INFO] :: [Dummy-1] :: ln-1750 :: Chain [1] done processing
+2023-06-29 09:03:03 :: <connections.connections> :: [INFO] :: [Dummy-1] :: ln-70 :: {'seq': '175', 'req-date': '20230629 09:00:31', 'status-code': '1', 'completion-date': '20230629 09:03:03', 'anomal': ['2023-06-28 02:19:00', '2023-06-28 04:57:00', '2023-06-28 06:56:00', '2023-06-28 09:04:00', '2023-06-28 09:37:00', '2023-06-28 10:10:00', '2023-06-28 11:22:00', '2023-06-28 13:02:00', '2023-06-28 13:06:00', '2023-06-28 13:18:00', '2023-06-28 13:22:00', '2023-06-28 15:44:00', '2023-06-28 16:33:00', '2023-06-28 17:28:00', '2023-06-28 17:45:00', '2023-06-28 17:58:00', '2023-06-28 19:00:00', '2023-06-28 21:46:00', '2023-06-28 23:21:00']}

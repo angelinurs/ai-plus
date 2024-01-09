@@ -1,0 +1,18 @@
+2023-06-22 11:47:08 [INFO ] c.e.l.LogcollectorApplication - Starting LogcollectorApplication using Java 1.8.0_242 on localhost with PID 5820 (/home/naru/ai_plus_java/aiplus.jar started by naru in /home/naru/ai_plus_java)
+2023-06-22 11:47:08 [INFO ] c.e.l.LogcollectorApplication - No active profile set, falling back to 1 default profile: "default"
+2023-06-22 11:47:10 [INFO ] c.e.l.LogcollectorApplication - Started LogcollectorApplication in 2.823 seconds (JVM running for 3.383)
+2023-06-22 17:36:42 [INFO ] c.e.l.LogcollectorApplication - Starting LogcollectorApplication using Java 1.8.0_242 on localhost with PID 15348 (/home/naru/ai_plus_java/aiplus.jar started by naru in /home/naru/ai_plus_java)
+2023-06-22 17:36:42 [INFO ] c.e.l.LogcollectorApplication - No active profile set, falling back to 1 default profile: "default"
+2023-06-22 17:36:44 [INFO ] c.e.l.LogcollectorApplication - Started LogcollectorApplication in 2.922 seconds (JVM running for 3.483)
+2023-06-22 17:38:03 [INFO ] c.e.l.LogcollectorApplication - Starting LogcollectorApplication using Java 1.8.0_242 on localhost with PID 17023 (/home/naru/lab/work/ai_plus_java/aiplus.jar started by naru in /home/naru/lab/work/ai_plus_java)
+2023-06-22 17:38:03 [INFO ] c.e.l.LogcollectorApplication - No active profile set, falling back to 1 default profile: "default"
+2023-06-22 17:38:05 [INFO ] c.e.l.LogcollectorApplication - Started LogcollectorApplication in 2.837 seconds (JVM running for 3.407)
+2023-06-22 17:43:34 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | aiplus1
+------------------------------ Request data -------------------------
+  req-date       | 20230622 17:43:34
+  seq            | 63
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-22 17:43:34 [INFO ] c.e.l.controller.TestController - seq : 63

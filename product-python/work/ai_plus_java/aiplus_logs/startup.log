@@ -1,0 +1,551 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.11)
+
+16:14 INFO  c.e.l.LogcollectorApplication - Starting LogcollectorApplication using Java 1.8.0_242 on localhost with PID 19315 (/home/naru/lab/work/ai_plus_java/aiplus.jar started by naru in /home/naru/lab/work/ai_plus_java)
+16:14 INFO  c.e.l.LogcollectorApplication - No active profile set, falling back to 1 default profile: "default"
+16:14 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9080 (http)
+16:14 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-9080"]
+16:14 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:14 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+16:14 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:14 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1322 ms
+16:14 WARN  com.zaxxer.hikari.HikariConfig - ai-plus-pool - maxLifetime is less than 30000ms, setting to default 1800000ms.
+16:14 INFO  com.zaxxer.hikari.HikariDataSource - ai-plus-pool - Starting...
+16:14 INFO  com.zaxxer.hikari.HikariDataSource - ai-plus-pool - Start completed.
+16:14 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-9080"]
+16:14 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9080 (http) with context path ''
+16:14 INFO  c.e.l.LogcollectorApplication - Started LogcollectorApplication in 2.943 seconds (JVM running for 3.574)
+16:14 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:14 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:14 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+16:17 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | aiplus1
+------------------------------ Request data -------------------------
+  req-date       | 20230628 16:14:52
+  seq            | 160
+  status-code    | 0
+---------------------------------------------------------------------
+16:17 INFO  c.e.l.controller.TestController - seq : 160
+16:30 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | psmai1
+------------------------------ Request data -------------------------
+  req-date       | 20230628 16:27:49
+  seq            | 161
+  status-code    | 0
+---------------------------------------------------------------------
+16:30 INFO  c.e.l.controller.TestController - seq : 161
+16:31 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id                 | psmai1
+-------------------------------- Polling ----------------------------
+  req-date           | 20230628 16:27:49
+  seq                | 161
+  status-code        | 1
+  completion-date    | 20230628 16:30:55
+  anomal             | ["2023-06-27 02:19:00","2023-06-27 04:57:00","2023-06-27 06:56:00","2023-06-27 09:37:00","2023-06-27 10:10:00","2023-06-27 11:22:00","2023-06-27 13:02:00","2023-06-27 15:44:00","2023-06-27 16:33:00","2023-06-27 17:28:00","2023-06-27 19:00:00","2023-06-27 21:46:00","2023-06-27 23:21:00"]
+---------------------------------------------------------------------
+16:31 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 02:19:00
+16:31 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 04:57:00
+16:31 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 06:56:00
+16:31 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:37:00
+16:31 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 10:10:00
+16:31 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 11:22:00
+16:31 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:02:00
+16:31 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 15:44:00
+16:31 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 16:33:00
+16:31 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 17:28:00
+16:31 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 19:00:00
+16:31 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 21:46:00
+16:31 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 23:21:00
+16:35 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | psmai2
+------------------------------ Request data -------------------------
+  req-date       | 20230628 16:31:48
+  seq            | 162
+  status-code    | 0
+---------------------------------------------------------------------
+16:35 INFO  c.e.l.controller.TestController - seq : 162
+16:35 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id                 | psmai2
+-------------------------------- Polling ----------------------------
+  req-date           | 20230628 16:31:48
+  seq                | 162
+  status-code        | 1
+  completion-date    | 20230628 16:35:03
+  anomal             | ["2023-06-27 02:19:00","2023-06-27 04:57:00","2023-06-27 06:56:00","2023-06-27 09:01:00","2023-06-27 09:37:00","2023-06-27 10:10:00","2023-06-27 11:22:00","2023-06-27 13:02:00","2023-06-27 13:19:00","2023-06-27 13:28:00","2023-06-27 15:44:00","2023-06-27 16:33:00","2023-06-27 17:28:00","2023-06-27 17:53:00","2023-06-27 19:00:00","2023-06-27 21:46:00","2023-06-27 23:21:00"]
+---------------------------------------------------------------------
+16:35 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 02:19:00
+16:35 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 04:57:00
+16:35 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 06:56:00
+16:35 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:01:00
+16:35 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:37:00
+16:35 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 10:10:00
+16:35 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 11:22:00
+16:35 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:02:00
+16:35 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:19:00
+16:35 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:28:00
+16:35 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 15:44:00
+16:35 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 16:33:00
+16:35 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 17:28:00
+16:35 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 17:53:00
+16:35 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 19:00:00
+16:35 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 21:46:00
+16:35 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 23:21:00
+16:38 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | psmai3
+------------------------------ Request data -------------------------
+  req-date       | 20230628 16:35:40
+  seq            | 163
+  status-code    | 0
+---------------------------------------------------------------------
+16:38 INFO  c.e.l.controller.TestController - seq : 163
+16:38 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id                 | psmai3
+-------------------------------- Polling ----------------------------
+  req-date           | 20230628 16:35:40
+  seq                | 163
+  status-code        | 1
+  completion-date    | 20230628 16:38:23
+  anomal             | ["2023-06-27 02:19:00","2023-06-27 04:57:00","2023-06-27 06:56:00","2023-06-27 09:37:00","2023-06-27 10:10:00","2023-06-27 11:22:00","2023-06-27 13:02:00","2023-06-27 13:14:00","2023-06-27 15:44:00","2023-06-27 16:33:00","2023-06-27 17:28:00","2023-06-27 17:43:00","2023-06-27 19:00:00","2023-06-27 21:46:00","2023-06-27 23:21:00"]
+---------------------------------------------------------------------
+16:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 02:19:00
+16:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 04:57:00
+16:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 06:56:00
+16:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:37:00
+16:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 10:10:00
+16:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 11:22:00
+16:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:02:00
+16:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:14:00
+16:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 15:44:00
+16:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 16:33:00
+16:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 17:28:00
+16:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 17:43:00
+16:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 19:00:00
+16:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 21:46:00
+16:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 23:21:00
+16:42 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | psmai4
+------------------------------ Request data -------------------------
+  req-date       | 20230628 16:38:59
+  seq            | 164
+  status-code    | 0
+---------------------------------------------------------------------
+16:42 INFO  c.e.l.controller.TestController - seq : 164
+16:42 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id                 | psmai4
+-------------------------------- Polling ----------------------------
+  req-date           | 20230628 16:38:59
+  seq                | 164
+  status-code        | 1
+  completion-date    | 20230628 16:42:09
+  anomal             | ["2023-06-27 02:19:00","2023-06-27 04:57:00","2023-06-27 06:56:00","2023-06-27 09:00:00","2023-06-27 09:02:00","2023-06-27 09:03:00","2023-06-27 09:08:00","2023-06-27 09:11:00","2023-06-27 09:37:00","2023-06-27 10:10:00","2023-06-27 11:22:00","2023-06-27 13:01:00","2023-06-27 13:02:00","2023-06-27 13:25:00","2023-06-27 15:44:00","2023-06-27 16:33:00","2023-06-27 17:28:00","2023-06-27 17:49:00","2023-06-27 17:58:00","2023-06-27 19:00:00","2023-06-27 21:46:00","2023-06-27 23:21:00"]
+---------------------------------------------------------------------
+16:42 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 02:19:00
+16:42 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 04:57:00
+16:42 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 06:56:00
+16:42 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:00:00
+16:42 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:02:00
+16:42 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:03:00
+16:42 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:08:00
+16:42 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:11:00
+16:42 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:37:00
+16:42 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 10:10:00
+16:42 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 11:22:00
+16:42 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:01:00
+16:42 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:02:00
+16:42 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:25:00
+16:42 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 15:44:00
+16:42 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 16:33:00
+16:42 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 17:28:00
+16:42 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 17:49:00
+16:42 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 17:58:00
+16:42 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 19:00:00
+16:42 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 21:46:00
+16:42 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 23:21:00
+16:45 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | psmai5
+------------------------------ Request data -------------------------
+  req-date       | 20230628 16:42:42
+  seq            | 165
+  status-code    | 0
+---------------------------------------------------------------------
+16:45 INFO  c.e.l.controller.TestController - seq : 165
+16:46 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id                 | psmai5
+-------------------------------- Polling ----------------------------
+  req-date           | 20230628 16:42:42
+  seq                | 165
+  status-code        | 1
+  completion-date    | 20230628 16:45:53
+  anomal             | ["2023-06-27 02:19:00","2023-06-27 04:57:00","2023-06-27 06:56:00","2023-06-27 09:00:00","2023-06-27 09:37:00","2023-06-27 10:10:00","2023-06-27 11:22:00","2023-06-27 13:01:00","2023-06-27 13:02:00","2023-06-27 15:44:00","2023-06-27 16:33:00","2023-06-27 17:28:00","2023-06-27 19:00:00","2023-06-27 21:46:00","2023-06-27 23:21:00"]
+---------------------------------------------------------------------
+16:46 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 02:19:00
+16:46 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 04:57:00
+16:46 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 06:56:00
+16:46 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:00:00
+16:46 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:37:00
+16:46 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 10:10:00
+16:46 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 11:22:00
+16:46 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:01:00
+16:46 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:02:00
+16:46 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 15:44:00
+16:46 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 16:33:00
+16:46 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 17:28:00
+16:46 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 19:00:00
+16:46 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 21:46:00
+16:46 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 23:21:00
+17:53 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | skhan
+------------------------------ Request data -------------------------
+  req-date       | 20230628 17:50:29
+  seq            | 166
+  status-code    | 0
+---------------------------------------------------------------------
+17:53 INFO  c.e.l.controller.TestController - seq : 166
+17:53 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id                 | skhan
+-------------------------------- Polling ----------------------------
+  req-date           | 20230628 17:50:29
+  seq                | 166
+  status-code        | 1
+  completion-date    | 20230628 17:53:15
+  anomal             | ["2023-06-27 02:19:00","2023-06-27 04:57:00","2023-06-27 06:56:00","2023-06-27 09:16:00","2023-06-27 09:37:00","2023-06-27 09:45:00","2023-06-27 10:10:00","2023-06-27 11:22:00","2023-06-27 11:52:00","2023-06-27 11:55:00","2023-06-27 13:02:00","2023-06-27 15:44:00","2023-06-27 16:33:00","2023-06-27 17:28:00","2023-06-27 19:00:00","2023-06-27 21:46:00","2023-06-27 23:21:00"]
+---------------------------------------------------------------------
+17:53 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 02:19:00
+17:53 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 04:57:00
+17:53 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 06:56:00
+17:53 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:16:00
+17:53 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:37:00
+17:53 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:45:00
+17:53 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 10:10:00
+17:53 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 11:22:00
+17:53 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 11:52:00
+17:53 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 11:55:00
+17:53 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:02:00
+17:53 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 15:44:00
+17:53 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 16:33:00
+17:53 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 17:28:00
+17:53 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 19:00:00
+17:53 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 21:46:00
+17:53 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 23:21:00
+17:56 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | cwkim
+------------------------------ Request data -------------------------
+  req-date       | 20230628 17:53:51
+  seq            | 167
+  status-code    | 0
+---------------------------------------------------------------------
+17:56 INFO  c.e.l.controller.TestController - seq : 167
+17:56 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id                 | cwkim
+-------------------------------- Polling ----------------------------
+  req-date           | 20230628 17:53:51
+  seq                | 167
+  status-code        | 1
+  completion-date    | 20230628 17:56:53
+  anomal             | ["2023-06-27 02:19:00","2023-06-27 04:57:00","2023-06-27 06:56:00","2023-06-27 09:00:00","2023-06-27 09:07:00","2023-06-27 09:30:00","2023-06-27 09:37:00","2023-06-27 10:10:00","2023-06-27 11:22:00","2023-06-27 11:54:00","2023-06-27 13:02:00","2023-06-27 13:08:00","2023-06-27 13:09:00","2023-06-27 13:12:00","2023-06-27 13:18:00","2023-06-27 14:18:00","2023-06-27 15:34:00","2023-06-27 15:44:00","2023-06-27 16:33:00","2023-06-27 17:28:00","2023-06-27 17:45:00","2023-06-27 19:00:00","2023-06-27 21:46:00","2023-06-27 23:21:00"]
+---------------------------------------------------------------------
+17:56 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 02:19:00
+17:56 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 04:57:00
+17:56 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 06:56:00
+17:56 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:00:00
+17:56 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:07:00
+17:57 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:30:00
+17:57 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:37:00
+17:57 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 10:10:00
+17:57 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 11:22:00
+17:57 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 11:54:00
+17:57 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:02:00
+17:57 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:08:00
+17:57 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:09:00
+17:57 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:12:00
+17:57 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:18:00
+17:57 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 14:18:00
+17:57 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 15:34:00
+17:57 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 15:44:00
+17:57 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 16:33:00
+17:57 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 17:28:00
+17:57 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 17:45:00
+17:57 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 19:00:00
+17:57 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 21:46:00
+17:57 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 23:21:00
+17:59 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | yjheo
+------------------------------ Request data -------------------------
+  req-date       | 20230628 17:57:17
+  seq            | 168
+  status-code    | 0
+---------------------------------------------------------------------
+17:59 INFO  c.e.l.controller.TestController - seq : 168
+18:00 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id                 | yjheo
+-------------------------------- Polling ----------------------------
+  req-date           | 20230628 17:57:17
+  seq                | 168
+  status-code        | 1
+  completion-date    | 20230628 17:59:48
+  anomal             | ["2023-06-27 02:19:00","2023-06-27 04:57:00","2023-06-27 06:56:00","2023-06-27 09:20:00","2023-06-27 09:37:00","2023-06-27 10:10:00","2023-06-27 11:22:00","2023-06-27 11:52:00","2023-06-27 11:57:00","2023-06-27 13:00:00","2023-06-27 13:01:00","2023-06-27 13:02:00","2023-06-27 13:04:00","2023-06-27 13:08:00","2023-06-27 13:09:00","2023-06-27 13:10:00","2023-06-27 13:23:00","2023-06-27 15:44:00","2023-06-27 16:33:00","2023-06-27 17:28:00","2023-06-27 19:00:00","2023-06-27 21:46:00","2023-06-27 23:21:00"]
+---------------------------------------------------------------------
+18:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 02:19:00
+18:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 04:57:00
+18:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 06:56:00
+18:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:20:00
+18:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:37:00
+18:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 10:10:00
+18:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 11:22:00
+18:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 11:52:00
+18:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 11:57:00
+18:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:00:00
+18:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:01:00
+18:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:02:00
+18:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:04:00
+18:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:08:00
+18:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:09:00
+18:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:10:00
+18:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:23:00
+18:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 15:44:00
+18:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 16:33:00
+18:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 17:28:00
+18:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 19:00:00
+18:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 21:46:00
+18:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 23:21:00
+18:02 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | skpark
+------------------------------ Request data -------------------------
+  req-date       | 20230628 18:00:10
+  seq            | 169
+  status-code    | 0
+---------------------------------------------------------------------
+18:02 INFO  c.e.l.controller.TestController - seq : 169
+18:37 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | echong
+------------------------------ Request data -------------------------
+  req-date       | 20230628 18:35:14
+  seq            | 170
+  status-code    | 0
+---------------------------------------------------------------------
+18:37 INFO  c.e.l.controller.TestController - seq : 170
+18:38 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id                 | skpark
+-------------------------------- Polling ----------------------------
+  req-date           | 20230628 18:00:10
+  seq                | 169
+  status-code        | 1
+  completion-date    | 20230628 18:02:47
+  anomal             | ["2023-06-27 02:19:00","2023-06-27 04:57:00","2023-06-27 06:56:00","2023-06-27 09:00:00","2023-06-27 09:06:00","2023-06-27 09:08:00","2023-06-27 09:11:00","2023-06-27 09:19:00","2023-06-27 09:37:00","2023-06-27 09:43:00","2023-06-27 10:10:00","2023-06-27 11:22:00","2023-06-27 11:43:00","2023-06-27 11:46:00","2023-06-27 13:01:00","2023-06-27 13:02:00","2023-06-27 13:03:00","2023-06-27 13:06:00","2023-06-27 13:07:00","2023-06-27 13:13:00","2023-06-27 13:23:00","2023-06-27 15:44:00","2023-06-27 16:33:00","2023-06-27 17:28:00","2023-06-27 17:37:00","2023-06-27 17:54:00","2023-06-27 19:00:00","2023-06-27 21:46:00","2023-06-27 23:21:00"]
+---------------------------------------------------------------------
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 02:19:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 04:57:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 06:56:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:00:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:06:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:08:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:11:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:19:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:37:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:43:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 10:10:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 11:22:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 11:43:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 11:46:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:01:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:02:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:03:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:06:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:07:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:13:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:23:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 15:44:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 16:33:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 17:28:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 17:37:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 17:54:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 19:00:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 21:46:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 23:21:00
+18:38 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id                 | echong
+-------------------------------- Polling ----------------------------
+  req-date           | 20230628 18:35:14
+  seq                | 170
+  status-code        | 1
+  completion-date    | 20230628 18:37:38
+  anomal             | ["2023-06-27 02:19:00","2023-06-27 04:57:00","2023-06-27 06:56:00","2023-06-27 09:03:00","2023-06-27 09:04:00","2023-06-27 09:12:00","2023-06-27 09:18:00","2023-06-27 09:35:00","2023-06-27 09:37:00","2023-06-27 10:10:00","2023-06-27 11:22:00","2023-06-27 11:51:00","2023-06-27 13:02:00","2023-06-27 13:07:00","2023-06-27 13:11:00","2023-06-27 13:13:00","2023-06-27 13:24:00","2023-06-27 13:25:00","2023-06-27 15:44:00","2023-06-27 16:33:00","2023-06-27 17:28:00","2023-06-27 17:51:00","2023-06-27 19:00:00","2023-06-27 21:46:00","2023-06-27 23:21:00"]
+---------------------------------------------------------------------
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 02:19:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 04:57:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 06:56:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:03:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:04:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:12:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:18:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:35:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 09:37:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 10:10:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 11:22:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 11:51:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:02:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:07:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:11:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:13:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:24:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 13:25:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 15:44:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 16:33:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 17:28:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 17:51:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 19:00:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 21:46:00
+18:38 INFO  c.e.l.controller.TestController - anomal: 2023-06-27 23:21:00
+20:55 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | skhan
+------------------------------ Request data -------------------------
+  req-date       | 20230628 20:53:23
+  seq            | 171
+  status-code    | 0
+---------------------------------------------------------------------
+20:55 INFO  c.e.l.controller.TestController - seq : 171
+20:55 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id                 | skhan
+-------------------------------- Polling ----------------------------
+  req-date           | 20230628 20:53:23
+  seq                | 171
+  status-code        | 1
+  completion-date    | 20230628 20:55:49
+  anomal             | ["2023-06-28 02:19:00","2023-06-28 04:57:00","2023-06-28 06:56:00","2023-06-28 09:04:00","2023-06-28 09:37:00","2023-06-28 10:10:00","2023-06-28 11:22:00","2023-06-28 13:02:00","2023-06-28 13:06:00","2023-06-28 13:18:00","2023-06-28 13:22:00","2023-06-28 15:44:00","2023-06-28 16:33:00","2023-06-28 17:28:00","2023-06-28 17:45:00","2023-06-28 17:58:00","2023-06-28 19:00:00","2023-06-28 21:46:00","2023-06-28 23:21:00"]
+---------------------------------------------------------------------
+20:55 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 02:19:00
+20:55 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 04:57:00
+20:55 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 06:56:00
+20:55 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 09:04:00
+20:55 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 09:37:00
+20:55 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 10:10:00
+20:55 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 11:22:00
+20:55 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 13:02:00
+20:55 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 13:06:00
+20:55 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 13:18:00
+20:55 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 13:22:00
+20:55 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 15:44:00
+20:55 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 16:33:00
+20:55 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 17:28:00
+20:55 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 17:45:00
+20:55 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 17:58:00
+20:55 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 19:00:00
+20:55 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 21:46:00
+20:55 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 23:21:00
+21:00 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | cwkim
+------------------------------ Request data -------------------------
+  req-date       | 20230628 20:57:07
+  seq            | 172
+  status-code    | 0
+---------------------------------------------------------------------
+21:00 INFO  c.e.l.controller.TestController - seq : 172
+21:00 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id                 | cwkim
+-------------------------------- Polling ----------------------------
+  req-date           | 20230628 20:57:07
+  seq                | 172
+  status-code        | 1
+  completion-date    | 20230628 21:00:37
+  anomal             | ["2023-06-28 02:19:00","2023-06-28 04:57:00","2023-06-28 06:56:00","2023-06-28 09:37:00","2023-06-28 10:10:00","2023-06-28 11:22:00","2023-06-28 13:00:00","2023-06-28 13:02:00","2023-06-28 13:05:00","2023-06-28 13:09:00","2023-06-28 15:44:00","2023-06-28 16:33:00","2023-06-28 17:28:00","2023-06-28 17:54:00","2023-06-28 19:00:00","2023-06-28 21:46:00","2023-06-28 23:21:00"]
+---------------------------------------------------------------------
+21:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 02:19:00
+21:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 04:57:00
+21:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 06:56:00
+21:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 09:37:00
+21:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 10:10:00
+21:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 11:22:00
+21:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 13:00:00
+21:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 13:02:00
+21:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 13:05:00
+21:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 13:09:00
+21:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 15:44:00
+21:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 16:33:00
+21:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 17:28:00
+21:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 17:54:00
+21:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 19:00:00
+21:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 21:46:00
+21:00 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 23:21:00
+21:03 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | yjheo
+------------------------------ Request data -------------------------
+  req-date       | 20230628 21:00:58
+  seq            | 173
+  status-code    | 0
+---------------------------------------------------------------------
+21:03 INFO  c.e.l.controller.TestController - seq : 173
+21:09 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id                 | yjheo
+-------------------------------- Polling ----------------------------
+  req-date           | 20230628 21:00:58
+  seq                | 173
+  status-code        | 1
+  completion-date    | 20230628 21:03:48
+  anomal             | ["2023-06-28 02:19:00","2023-06-28 04:57:00","2023-06-28 06:56:00","2023-06-28 09:13:00","2023-06-28 09:37:00","2023-06-28 10:10:00","2023-06-28 11:22:00","2023-06-28 13:01:00","2023-06-28 13:02:00","2023-06-28 15:44:00","2023-06-28 16:33:00","2023-06-28 17:28:00","2023-06-28 19:00:00","2023-06-28 21:46:00","2023-06-28 23:21:00"]
+---------------------------------------------------------------------
+21:09 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 02:19:00
+21:09 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 04:57:00
+21:09 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 06:56:00
+21:09 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 09:13:00
+21:09 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 09:37:00
+21:09 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 10:10:00
+21:09 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 11:22:00
+21:09 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 13:01:00
+21:09 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 13:02:00
+21:09 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 15:44:00
+21:09 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 16:33:00
+21:09 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 17:28:00
+21:09 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 19:00:00
+21:09 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 21:46:00
+21:09 INFO  c.e.l.controller.TestController - anomal: 2023-06-28 23:21:00
+21:12 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | skpark
+------------------------------ Request data -------------------------
+  req-date       | 20230628 21:09:19
+  seq            | 174
+  status-code    | 0
+---------------------------------------------------------------------
+21:12 INFO  c.e.l.controller.TestController - seq : 174
+09:03 INFO  c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | myjo
+------------------------------ Request data -------------------------
+  req-date       | 20230629 09:00:31
+  seq            | 175
+  status-code    | 0
+---------------------------------------------------------------------
+09:03 INFO  c.e.l.controller.TestController - seq : 175

@@ -1,0 +1,653 @@
+2023-06-26 09:46:53 [INFO ] c.e.l.LogcollectorApplication - Starting LogcollectorApplication using Java 1.8.0_242 on localhost with PID 9134 (/home/naru/lab/work/ai_plus_java/aiplus.jar started by naru in /home/naru/lab/work/ai_plus_java)
+2023-06-26 09:46:53 [INFO ] c.e.l.LogcollectorApplication - No active profile set, falling back to 1 default profile: "default"
+2023-06-26 09:46:55 [INFO ] c.e.l.LogcollectorApplication - Started LogcollectorApplication in 2.852 seconds (JVM running for 3.443)
+2023-06-26 09:49:51 [INFO ] c.e.l.LogcollectorApplication - Starting LogcollectorApplication using Java 1.8.0_242 on localhost with PID 10489 (/home/naru/lab/work/ai_plus_java/aiplus.jar started by naru in /home/naru/lab/work/ai_plus_java)
+2023-06-26 09:49:51 [INFO ] c.e.l.LogcollectorApplication - No active profile set, falling back to 1 default profile: "default"
+2023-06-26 09:49:53 [INFO ] c.e.l.LogcollectorApplication - Started LogcollectorApplication in 2.927 seconds (JVM running for 3.519)
+2023-06-26 09:50:13 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | thsong
+------------------------------ Request data -------------------------
+  req-date       | 20230626 09:50:13
+  seq            | 64
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 09:50:13 [INFO ] c.e.l.controller.TestController - seq : 64
+2023-06-26 09:52:07 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | thsong
+------------------------------ Request data -------------------------
+  req-date       | 20230626 09:52:07
+  seq            | 65
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 09:52:07 [INFO ] c.e.l.controller.TestController - seq : 65
+2023-06-26 09:55:48 [INFO ] c.e.l.LogcollectorApplication - Starting LogcollectorApplication using Java 1.8.0_242 on localhost with PID 13589 (/home/naru/lab/work/ai_plus_java/aiplus.jar started by naru in /home/naru/lab/work/ai_plus_java)
+2023-06-26 09:55:48 [INFO ] c.e.l.LogcollectorApplication - No active profile set, falling back to 1 default profile: "default"
+2023-06-26 09:55:50 [INFO ] c.e.l.LogcollectorApplication - Started LogcollectorApplication in 3.025 seconds (JVM running for 3.601)
+2023-06-26 10:28:33 [INFO ] c.e.l.LogcollectorApplication - Starting LogcollectorApplication using Java 1.8.0_242 on localhost with PID 20486 (/home/naru/lab/work/ai_plus_java/aiplus.jar started by naru in /home/naru/lab/work/ai_plus_java)
+2023-06-26 10:28:33 [INFO ] c.e.l.LogcollectorApplication - No active profile set, falling back to 1 default profile: "default"
+2023-06-26 10:28:35 [INFO ] c.e.l.LogcollectorApplication - Started LogcollectorApplication in 3.034 seconds (JVM running for 3.636)
+2023-06-26 10:28:55 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | thsong
+------------------------------ Request data -------------------------
+  req-date       | 20230626 10:28:55
+  seq            | 66
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 10:28:55 [INFO ] c.e.l.controller.TestController - seq : 66
+2023-06-26 10:30:11 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | jskwon
+------------------------------ Request data -------------------------
+  req-date       | 20230626 10:30:11
+  seq            | 67
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 10:30:11 [INFO ] c.e.l.controller.TestController - seq : 67
+2023-06-26 10:31:15 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | yshwang
+------------------------------ Request data -------------------------
+  req-date       | 20230626 10:31:15
+  seq            | 68
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 10:31:15 [INFO ] c.e.l.controller.TestController - seq : 68
+2023-06-26 10:31:53 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | mhahn
+------------------------------ Request data -------------------------
+  req-date       | 20230626 10:31:53
+  seq            | 69
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 10:31:53 [INFO ] c.e.l.controller.TestController - seq : 69
+2023-06-26 10:32:51 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | thsong
+------------------------------ Request data -------------------------
+  req-date       | 20230626 10:32:51
+  seq            | 70
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 10:32:51 [INFO ] c.e.l.controller.TestController - seq : 70
+2023-06-26 10:33:32 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | jyryu
+------------------------------ Request data -------------------------
+  req-date       | 20230626 10:33:32
+  seq            | 71
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 10:33:32 [INFO ] c.e.l.controller.TestController - seq : 71
+2023-06-26 10:34:19 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | swjeon
+------------------------------ Request data -------------------------
+  req-date       | 20230626 10:34:19
+  seq            | 72
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 10:34:19 [INFO ] c.e.l.controller.TestController - seq : 72
+2023-06-26 10:34:50 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | mhhong
+------------------------------ Request data -------------------------
+  req-date       | 20230626 10:34:50
+  seq            | 73
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 10:34:50 [INFO ] c.e.l.controller.TestController - seq : 73
+2023-06-26 10:35:20 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | ehko
+------------------------------ Request data -------------------------
+  req-date       | 20230626 10:35:20
+  seq            | 74
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 10:35:20 [INFO ] c.e.l.controller.TestController - seq : 74
+2023-06-26 10:35:44 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | sjmoon
+------------------------------ Request data -------------------------
+  req-date       | 20230626 10:35:44
+  seq            | 75
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 10:35:44 [INFO ] c.e.l.controller.TestController - seq : 75
+2023-06-26 10:36:38 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | kmyang
+------------------------------ Request data -------------------------
+  req-date       | 20230626 10:36:38
+  seq            | 76
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 10:36:38 [INFO ] c.e.l.controller.TestController - seq : 76
+2023-06-26 10:42:52 [INFO ] c.e.l.controller.TestController - {"seq":"67"}
+2023-06-26 10:42:53 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id                 | jskwon
+-------------------------------- Polling ----------------------------
+  req-date           | 20230626 10:30:11
+  seq                | 67
+  status-code        | 1
+  completion-date    | 20230626 10:33:31
+  anomal             | []
+---------------------------------------------------------------------
+2023-06-26 10:43:02 [INFO ] c.e.l.controller.TestController - {"seq":"68"}
+2023-06-26 10:43:02 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id                 | yshwang
+-------------------------------- Polling ----------------------------
+  req-date           | 20230626 10:31:15
+  seq                | 68
+  status-code        | 1
+  completion-date    | 20230626 10:35:21
+  anomal             | []
+---------------------------------------------------------------------
+2023-06-26 10:43:49 [INFO ] c.e.l.controller.TestController - {"seq":"69"}
+2023-06-26 10:43:49 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id                 | mhahn
+-------------------------------- Polling ----------------------------
+  req-date           | 20230626 10:31:53
+  seq                | 69
+  status-code        | 1
+  completion-date    | 20230626 10:36:00
+  anomal             | []
+---------------------------------------------------------------------
+2023-06-26 10:43:58 [INFO ] c.e.l.controller.TestController - {"seq":"70"}
+2023-06-26 10:43:58 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id                 | thsong
+-------------------------------- Polling ----------------------------
+  req-date           | 20230626 10:32:51
+  seq                | 70
+  status-code        | 1
+  completion-date    | 20230626 10:36:58
+  anomal             | []
+---------------------------------------------------------------------
+2023-06-26 10:44:22 [INFO ] c.e.l.controller.TestController - {"seq":"71"}
+2023-06-26 10:44:23 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id                 | jyryu
+-------------------------------- Polling ----------------------------
+  req-date           | 20230626 10:33:32
+  seq                | 71
+  status-code        | 1
+  completion-date    | 20230626 10:38:58
+  anomal             | []
+---------------------------------------------------------------------
+2023-06-26 10:44:48 [INFO ] c.e.l.controller.TestController - {"seq":"72"}
+2023-06-26 10:44:48 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id                 | swjeon
+-------------------------------- Polling ----------------------------
+  req-date           | 20230626 10:34:19
+  seq                | 72
+  status-code        | 1
+  completion-date    | 20230626 10:39:30
+  anomal             | []
+---------------------------------------------------------------------
+2023-06-26 10:48:21 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | jskwon
+------------------------------ Request data -------------------------
+  req-date       | 20230626 10:48:21
+  seq            | 77
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 10:48:21 [INFO ] c.e.l.controller.TestController - seq : 77
+2023-06-26 11:48:30 [INFO ] c.e.l.LogcollectorApplication - Starting LogcollectorApplication using Java 1.8.0_242 on localhost with PID 8964 (/home/naru/lab/work/ai_plus_java/aiplus.jar started by naru in /home/naru/lab/work/ai_plus_java)
+2023-06-26 11:48:30 [INFO ] c.e.l.LogcollectorApplication - No active profile set, falling back to 1 default profile: "default"
+2023-06-26 11:48:33 [INFO ] c.e.l.LogcollectorApplication - Started LogcollectorApplication in 2.893 seconds (JVM running for 3.509)
+2023-06-26 11:50:28 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | jskwon
+------------------------------ Request data -------------------------
+  req-date       | 20230626 11:50:28
+  seq            | 78
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 11:50:28 [INFO ] c.e.l.controller.TestController - seq : 78
+2023-06-26 11:52:14 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id                 | jskwon
+-------------------------------- Polling ----------------------------
+  req-date           | 20230626 11:50:28
+  seq                | 78
+  status-code        | 0
+---------------------------------------------------------------------
+2023-06-26 13:09:15 [INFO ] c.e.l.LogcollectorApplication - Starting LogcollectorApplication using Java 1.8.0_242 on localhost with PID 25078 (/home/naru/lab/work/ai_plus_java/aiplus.jar started by naru in /home/naru/lab/work/ai_plus_java)
+2023-06-26 13:09:15 [INFO ] c.e.l.LogcollectorApplication - No active profile set, falling back to 1 default profile: "default"
+2023-06-26 13:09:17 [INFO ] c.e.l.LogcollectorApplication - Started LogcollectorApplication in 2.903 seconds (JVM running for 3.549)
+2023-06-26 13:09:24 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | jskwon
+------------------------------ Request data -------------------------
+  req-date       | 20230626 13:09:24
+  seq            | 79
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 13:09:24 [INFO ] c.e.l.controller.TestController - seq : 79
+2023-06-26 13:09:24 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | jskwon
+------------------------------ Request data -------------------------
+  req-date       | 20230626 13:09:24
+  seq            | 80
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 13:09:24 [INFO ] c.e.l.controller.TestController - seq : 80
+2023-06-26 13:10:11 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | yshwang
+------------------------------ Request data -------------------------
+  req-date       | 20230626 13:10:11
+  seq            | 81
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 13:10:11 [INFO ] c.e.l.controller.TestController - seq : 81
+2023-06-26 13:10:35 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id                 | jskwon
+-------------------------------- Polling ----------------------------
+  req-date           | 20230626 13:09:24
+  seq                | 80
+  status-code        | 0
+---------------------------------------------------------------------
+2023-06-26 13:10:46 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | mhahn
+------------------------------ Request data -------------------------
+  req-date       | 20230626 13:10:46
+  seq            | 82
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 13:10:46 [INFO ] c.e.l.controller.TestController - seq : 82
+2023-06-26 13:11:08 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | thsong
+------------------------------ Request data -------------------------
+  req-date       | 20230626 13:11:08
+  seq            | 83
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 13:11:08 [INFO ] c.e.l.controller.TestController - seq : 83
+2023-06-26 13:11:38 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | jyryu
+------------------------------ Request data -------------------------
+  req-date       | 20230626 13:11:38
+  seq            | 84
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 13:11:38 [INFO ] c.e.l.controller.TestController - seq : 84
+2023-06-26 13:11:58 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | swjeon
+------------------------------ Request data -------------------------
+  req-date       | 20230626 13:11:58
+  seq            | 85
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 13:11:58 [INFO ] c.e.l.controller.TestController - seq : 85
+2023-06-26 13:12:17 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | mhhong
+------------------------------ Request data -------------------------
+  req-date       | 20230626 13:12:17
+  seq            | 86
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 13:12:17 [INFO ] c.e.l.controller.TestController - seq : 86
+2023-06-26 13:12:37 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | ehko
+------------------------------ Request data -------------------------
+  req-date       | 20230626 13:12:37
+  seq            | 87
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 13:12:37 [INFO ] c.e.l.controller.TestController - seq : 87
+2023-06-26 13:12:53 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | sjmoon
+------------------------------ Request data -------------------------
+  req-date       | 20230626 13:12:53
+  seq            | 88
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 13:12:53 [INFO ] c.e.l.controller.TestController - seq : 88
+2023-06-26 13:13:09 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | kmyang
+------------------------------ Request data -------------------------
+  req-date       | 20230626 13:13:09
+  seq            | 89
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 13:13:09 [INFO ] c.e.l.controller.TestController - seq : 89
+2023-06-26 13:16:10 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | jskwon
+------------------------------ Request data -------------------------
+  req-date       | 20230626 13:16:10
+  seq            | 90
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 13:16:10 [INFO ] c.e.l.controller.TestController - seq : 90
+2023-06-26 13:16:54 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | yshwang
+------------------------------ Request data -------------------------
+  req-date       | 20230626 13:16:54
+  seq            | 91
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 13:16:54 [INFO ] c.e.l.controller.TestController - seq : 91
+2023-06-26 13:17:15 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | mhahn
+------------------------------ Request data -------------------------
+  req-date       | 20230626 13:17:15
+  seq            | 92
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 13:17:15 [INFO ] c.e.l.controller.TestController - seq : 92
+2023-06-26 13:17:37 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | thsong
+------------------------------ Request data -------------------------
+  req-date       | 20230626 13:17:37
+  seq            | 93
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 13:17:37 [INFO ] c.e.l.controller.TestController - seq : 93
+2023-06-26 13:17:57 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | jyryu
+------------------------------ Request data -------------------------
+  req-date       | 20230626 13:17:57
+  seq            | 94
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 13:17:57 [INFO ] c.e.l.controller.TestController - seq : 94
+2023-06-26 13:18:22 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | swjeon
+------------------------------ Request data -------------------------
+  req-date       | 20230626 13:18:22
+  seq            | 95
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 13:18:22 [INFO ] c.e.l.controller.TestController - seq : 95
+2023-06-26 13:18:41 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | mhhong
+------------------------------ Request data -------------------------
+  req-date       | 20230626 13:18:41
+  seq            | 96
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 13:18:41 [INFO ] c.e.l.controller.TestController - seq : 96
+2023-06-26 13:19:00 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | ehko
+------------------------------ Request data -------------------------
+  req-date       | 20230626 13:19:00
+  seq            | 97
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 13:19:00 [INFO ] c.e.l.controller.TestController - seq : 97
+2023-06-26 13:19:19 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | sjmoon
+------------------------------ Request data -------------------------
+  req-date       | 20230626 13:19:19
+  seq            | 98
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 13:19:19 [INFO ] c.e.l.controller.TestController - seq : 98
+2023-06-26 13:19:42 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | kmyang
+------------------------------ Request data -------------------------
+  req-date       | 20230626 13:19:42
+  seq            | 99
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 13:19:42 [INFO ] c.e.l.controller.TestController - seq : 99
+2023-06-26 14:37:52 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | jskwon
+------------------------------ Request data -------------------------
+  req-date       | 20230626 14:37:52
+  seq            | 100
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 14:37:52 [INFO ] c.e.l.controller.TestController - seq : 100
+2023-06-26 14:39:04 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | yshwang
+------------------------------ Request data -------------------------
+  req-date       | 20230626 14:39:04
+  seq            | 101
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 14:39:04 [INFO ] c.e.l.controller.TestController - seq : 101
+2023-06-26 14:39:23 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | mhahn
+------------------------------ Request data -------------------------
+  req-date       | 20230626 14:39:23
+  seq            | 102
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 14:39:23 [INFO ] c.e.l.controller.TestController - seq : 102
+2023-06-26 14:39:40 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | thsong
+------------------------------ Request data -------------------------
+  req-date       | 20230626 14:39:40
+  seq            | 103
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 14:39:40 [INFO ] c.e.l.controller.TestController - seq : 103
+2023-06-26 14:39:59 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | jyryu
+------------------------------ Request data -------------------------
+  req-date       | 20230626 14:39:59
+  seq            | 104
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 14:39:59 [INFO ] c.e.l.controller.TestController - seq : 104
+2023-06-26 14:40:37 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | swjeon
+------------------------------ Request data -------------------------
+  req-date       | 20230626 14:40:37
+  seq            | 105
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 14:40:37 [INFO ] c.e.l.controller.TestController - seq : 105
+2023-06-26 14:40:53 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | mhhong
+------------------------------ Request data -------------------------
+  req-date       | 20230626 14:40:53
+  seq            | 106
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 14:40:53 [INFO ] c.e.l.controller.TestController - seq : 106
+2023-06-26 14:41:16 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | ehko
+------------------------------ Request data -------------------------
+  req-date       | 20230626 14:41:16
+  seq            | 107
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 14:41:16 [INFO ] c.e.l.controller.TestController - seq : 107
+2023-06-26 14:41:53 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | sjmoon
+------------------------------ Request data -------------------------
+  req-date       | 20230626 14:41:53
+  seq            | 108
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 14:41:53 [INFO ] c.e.l.controller.TestController - seq : 108
+2023-06-26 14:42:14 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | kmyang
+------------------------------ Request data -------------------------
+  req-date       | 20230626 14:42:14
+  seq            | 109
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 14:42:14 [INFO ] c.e.l.controller.TestController - seq : 109
+2023-06-26 15:31:33 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | jskwon
+------------------------------ Request data -------------------------
+  req-date       | 20230626 15:31:33
+  seq            | 110
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 15:31:33 [INFO ] c.e.l.controller.TestController - seq : 110
+2023-06-26 15:31:59 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | yshwang
+------------------------------ Request data -------------------------
+  req-date       | 20230626 15:31:59
+  seq            | 111
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 15:31:59 [INFO ] c.e.l.controller.TestController - seq : 111
+2023-06-26 15:32:18 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | mhahn
+------------------------------ Request data -------------------------
+  req-date       | 20230626 15:32:18
+  seq            | 112
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 15:32:18 [INFO ] c.e.l.controller.TestController - seq : 112
+2023-06-26 15:32:34 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | thsong
+------------------------------ Request data -------------------------
+  req-date       | 20230626 15:32:34
+  seq            | 113
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 15:32:34 [INFO ] c.e.l.controller.TestController - seq : 113
+2023-06-26 15:32:49 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | jyryu
+------------------------------ Request data -------------------------
+  req-date       | 20230626 15:32:49
+  seq            | 114
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 15:32:49 [INFO ] c.e.l.controller.TestController - seq : 114
+2023-06-26 15:33:07 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | swjeon
+------------------------------ Request data -------------------------
+  req-date       | 20230626 15:33:07
+  seq            | 115
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 15:33:07 [INFO ] c.e.l.controller.TestController - seq : 115
+2023-06-26 15:33:21 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | mhhong
+------------------------------ Request data -------------------------
+  req-date       | 20230626 15:33:21
+  seq            | 116
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 15:33:21 [INFO ] c.e.l.controller.TestController - seq : 116
+2023-06-26 15:33:36 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | ehko
+------------------------------ Request data -------------------------
+  req-date       | 20230626 15:33:36
+  seq            | 117
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 15:33:36 [INFO ] c.e.l.controller.TestController - seq : 117
+2023-06-26 15:33:56 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | sjmoon
+------------------------------ Request data -------------------------
+  req-date       | 20230626 15:33:56
+  seq            | 118
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 15:33:56 [INFO ] c.e.l.controller.TestController - seq : 118
+2023-06-26 15:34:15 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | kmyang
+------------------------------ Request data -------------------------
+  req-date       | 20230626 15:34:15
+  seq            | 119
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 15:34:15 [INFO ] c.e.l.controller.TestController - seq : 119
+2023-06-26 16:10:48 [INFO ] c.e.l.LogcollectorApplication - Starting LogcollectorApplication using Java 1.8.0_242 on localhost with PID 5893 (/home/naru/lab/work/ai_plus_java/aiplus.jar started by naru in /home/naru/lab/work/ai_plus_java)
+2023-06-26 16:10:48 [INFO ] c.e.l.LogcollectorApplication - No active profile set, falling back to 1 default profile: "default"
+2023-06-26 16:10:51 [INFO ] c.e.l.LogcollectorApplication - Started LogcollectorApplication in 2.814 seconds (JVM running for 3.424)
+2023-06-26 16:11:56 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | kmyang
+------------------------------ Request data -------------------------
+  req-date       | 20230626 16:11:56
+  seq            | 120
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 16:11:56 [INFO ] c.e.l.controller.TestController - seq : 120
+2023-06-26 16:13:56 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id                 | kmyang
+-------------------------------- Polling ----------------------------
+  req-date           | 20230626 16:11:56
+  seq                | 120
+  status-code        | 1
+  completion-date    | 20230626 16:13:51
+  anomal             | []
+---------------------------------------------------------------------
+2023-06-26 17:46:01 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | aiplus1
+------------------------------ Request data -------------------------
+  req-date       | 20230626 17:46:01
+  seq            | 121
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 17:46:01 [INFO ] c.e.l.controller.TestController - seq : 121
+2023-06-26 17:46:24 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | aiplus2
+------------------------------ Request data -------------------------
+  req-date       | 20230626 17:46:24
+  seq            | 122
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 17:46:24 [INFO ] c.e.l.controller.TestController - seq : 122
+2023-06-26 17:46:34 [INFO ] c.e.l.controller.TestController - 
+-------------------------------- User --------------------------------
+  id             | aiplus3
+------------------------------ Request data -------------------------
+  req-date       | 20230626 17:46:34
+  seq            | 123
+  status-code    | 0
+---------------------------------------------------------------------
+2023-06-26 17:46:34 [INFO ] c.e.l.controller.TestController - seq : 123

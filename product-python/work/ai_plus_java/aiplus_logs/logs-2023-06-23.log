@@ -1,0 +1,3 @@
+2023-06-23 16:41:06 [INFO ] c.e.l.LogcollectorApplication - Starting LogcollectorApplication using Java 1.8.0_242 on localhost with PID 28764 (/home/naru/lab/work/ai_plus_java/aiplus.jar started by naru in /home/naru/lab/work/ai_plus_java)
+2023-06-23 16:41:06 [INFO ] c.e.l.LogcollectorApplication - No active profile set, falling back to 1 default profile: "default"
+2023-06-23 16:41:08 [INFO ] c.e.l.LogcollectorApplication - Started LogcollectorApplication in 2.926 seconds (JVM running for 3.483)

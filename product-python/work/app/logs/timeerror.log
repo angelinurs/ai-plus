@@ -1,0 +1,15 @@
+2023-06-27 15:42:14 :: <app> :: [ERROR] :: [Dummy-85] :: ln-1414 :: Exception on /polling_predict [POST]
+Traceback (most recent call last):
+  File "/home/naru/.pyenv/versions/py3.9.13/lib/python3.9/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/naru/.pyenv/versions/py3.9.13/lib/python3.9/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/naru/.pyenv/versions/py3.9.13/lib/python3.9/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/naru/.pyenv/versions/py3.9.13/lib/python3.9/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/naru/lab/work/app/app.py", line 141, in polling_predict_post
+    data = memDB.get_data( str(seq_no) )
+  File "/home/naru/lab/work/app/connections/connections.py", line 78, in get_data
+    data = json.loads( self.r.get( f'seq:{seq_no}' ).decode('ascii') )
+AttributeError: 'NoneType' object has no attribute 'decode'
